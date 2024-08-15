@@ -12,7 +12,7 @@ import {
 
 
 new Swiper("#slider .swiper", {
-  modules: [Pagination, Autoplay],
+  modules: [Navigation, Autoplay],
 
   slidesPerView: 1,
   // spaceBetween: 20,
