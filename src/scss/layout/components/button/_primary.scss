@@ -1,2 +1,14 @@
 .button-primary {
+  padding: 17px 40px;
+  border: 1px solid $link-hover-color;
+  border-radius: 45px;
+  color: $link-hover-color;
+  transition: $transition-time;
+
+  &:hover {
+    // border: 1px $palette-white;
+
+    background-color: $palette-green;
+    color: $color-text__white;
+  }
 }
