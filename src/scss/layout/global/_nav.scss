@@ -15,12 +15,17 @@
 
 
   &--header {
+    .nav__list {
+      display: flex;
+      gap: 46px;
+    }
+
     .nav__item {
 
     }
 
     .nav__link {
-
+      font-size: 18px;
     }
   }
 }
