@@ -1,0 +1,78 @@
+#advantages {
+  .advantages__header {
+    height: 313px;
+    margin-top: -253px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='313' viewBox='0 0 1920 313' fill='ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z' fill='%23078D4D'/%3E%3C/svg%3E%0A");
+    background-position: top left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages__wrapper {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 300px;
+    background-color: #078D4D;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='1434' height='237' viewBox='0 0 1434 237' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M855.5 177.619C662.7 153.205 113.5 245.169 0 245.169L29 248.598L1460 263V0C1431.83 3.65754 1355.4 20.9166 1275 60.6923C1174.5 110.412 1096.5 208.137 855.5 177.619Z' fill='white'/%3E%3C/svg%3E");
+    background-position: bottom -50px right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages__title {
+    width: 1638px;
+    margin: 0 auto;
+    color: $color-text__white;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+  }
+
+  .advantages__picture {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 449px);
+    max-width: 897px;
+  }
+
+  .advantages__info {
+    display: grid;
+    gap: 10px;
+    width: 1638px;
+    margin: 0 auto;
+
+    & > div {
+      // display: inline-flex;
+
+      z-index: 10;
+      max-width: max-content;
+      padding: 28px 58px;
+      border: 3px dashed #00AA6D;
+      border-radius: 45px;
+      background: $palette-white;
+
+      &:first-child {
+        // justify-self: right;
+
+        grid-row: 2/3;
+
+      }
+
+      &:nth-child(2) {
+        justify-self: right;
+      }
+
+      &:nth-child(3) {
+        justify-self: right;
+      }
+
+      &:last-child {
+        // justify-self: right;
+      }
+    }
+
+
+
+  }
+}

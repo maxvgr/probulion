@@ -34,5 +34,29 @@ new Swiper("#slider .swiper", {
   //   el: '#slider .swiper-pagination',
   //   clickable: true,
   // },
+});
 
+new Swiper("#popular .swiper", {
+  modules: [Navigation, Autoplay],
+
+  slidesPerView: 5.2,
+  spaceBetween: 20,
+  loop: true,
+
+  speed: 2000,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: "#popular .swiper-button-next",
+    prevEl: "#popular .swiper-button-prev",
+  },
+
+  // pagination: {
+  //   el: '#slider .swiper-pagination',
+  //   clickable: true,
+  // },
 });
