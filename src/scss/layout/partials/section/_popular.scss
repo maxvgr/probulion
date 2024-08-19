@@ -1,5 +1,9 @@
 #popular {
-  .popular__wrapper {
+
+}
+
+.popular {
+  &__wrapper {
     width: 1638px;
     margin: 0 auto;
     padding: 66px 0 0;
@@ -7,26 +11,26 @@
     // padding: 66px 10px 0;
   }
 
-  .popular__header {
+  &__header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding-bottom: 36px;
   }
 
-  .popular__title,
-  .popular__all {
+  &__title,
+  &__all {
     display: inline-flex;
   }
 
-  .popular__title {
+  &__title {
     justify-content: flex-start;
     font-weight: 700;
     font-size: 42px;
     font-family: $font-title;
   }
 
-  .popular__all {
+  &__all {
     justify-content: flex-end;
     padding-right: 14px;
   }

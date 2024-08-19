@@ -13,10 +13,10 @@
     padding-top: 24px;
     padding-bottom: 130px;
     background-color: #078d4d;
-    background-image: url("data:image/svg+xml,%3Csvg width='1434' height='237' viewBox='0 0 1434 237' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M855.5 177.619C662.7 153.205 113.5 245.169 0 245.169L29 248.598L1460 263V0C1431.83 3.65754 1355.4 20.9166 1275 60.6923C1174.5 110.412 1096.5 208.137 855.5 177.619Z' fill='white'/%3E%3C/svg%3E");
-    background-position: bottom -50px right;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml,<svg width="579" height="564" viewBox="0 0 579 564" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5" filter="url(%23filter0_f_1_111)"><ellipse cx="117" cy="385.5" rx="342" ry="265.5" fill="%2300DF8F"/></g><defs><filter id="filter0_f_1_111" x="-345" y="0" width="924" height="771" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1_111"/></filter></defs></svg>'), url("data:image/svg+xml,%3Csvg width='1434' height='237' viewBox='0 0 1434 237' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M855.5 177.619C662.7 153.205 113.5 245.169 0 245.169L29 248.598L1460 263V0C1431.83 3.65754 1355.4 20.9166 1275 60.6923C1174.5 110.412 1096.5 208.137 855.5 177.619Z' fill='white'/%3E%3C/svg%3E");
+    background-position: bottom  left, bottom -50px right;
+    background-size: 40%, 100%;
+    background-repeat: no-repeat, no-repeat;
   }
 
   .advantages__title {
