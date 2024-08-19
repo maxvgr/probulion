@@ -1,0 +1,46 @@
+#about-home {
+  padding-top: 22px;
+  background-image: url('../assets/images/layout/section/about-home/logo.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+.about-home {
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: $font-title;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 48px;
+    justify-items: end;
+
+    picture {
+      max-width: 667px;
+      max-height: 408px;
+    }
+  }
+
+  &__info {
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 155%; /* 27.9px */
+
+    p {
+      padding: 7px 0;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .button {
+      margin-top: 40px;
+    }
+  }
+
+}
