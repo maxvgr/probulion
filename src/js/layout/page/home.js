@@ -80,8 +80,4 @@ new Swiper("#products-all .swiper", {
     prevEl: "#products-all .swiper-button-prev",
   },
 
-  // pagination: {
-  //   el: '#slider .swiper-pagination',
-  //   clickable: true,
-  // },
 });

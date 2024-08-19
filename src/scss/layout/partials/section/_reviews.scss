@@ -1,0 +1,31 @@
+#reviews {
+  padding-bottom: 90px;
+  background-color: #078d4d;
+}
+
+.reviews {
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    color: $color-text__white;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+  }
+
+  &__all {
+    justify-self: end;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 29px;
+  }
+}
