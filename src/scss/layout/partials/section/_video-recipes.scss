@@ -1,0 +1,90 @@
+#video-recipes {
+  padding-bottom: 63px;
+  background-color: #078d4d;
+  background-image: url('data:image/svg+xml,<svg width="543" height="619" viewBox="0 0 543 619" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5" filter="url(%23filter0_f_1_168)"><ellipse cx="106" cy="309.5" rx="317" ry="246.5" fill="%2300DF8F"/></g><defs><filter id="filter0_f_1_168" x="-331" y="-57" width="874" height="733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1_168"/></filter></defs></svg>'),
+    url('data:image/svg+xml,<svg width="429" height="619" viewBox="0 0 429 619" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5" filter="url(%23filter0_f_1_167)"><ellipse cx="437" cy="309.5" rx="317" ry="246.5" fill="%2300DF8F"/></g><defs><filter id="filter0_f_1_167" x="0" y="-57" width="874" height="733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1_167"/></filter></defs></svg>');
+  background-position: bottom left, bottom right;
+  background-size: 20%, 18%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.video-recipes {
+  &__wrapper {
+    width: 1638px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding-top: 22px;
+    color: $color-text__white;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-top: 32px;
+  }
+
+  &__info {
+    position: relative;
+    padding: 27px 38px;
+
+    &::after {
+      content: url('data:image/svg+xml,<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9412H24.7353M24.7353 12.9412L12.7941 24.8824M24.7353 12.9412L12.7941 1" stroke="white" stroke-width="2"/></svg>');
+      position: absolute;
+      top: 30px;
+      right: 35px;
+      opacity: 0;
+      transition: $transition-time ease;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background: $palette-white;
+    box-shadow: 0 0 26px 0 #00552c99;
+    transition: $transition-time ease;
+
+    picture {
+      transition: $transition-time ease;
+    }
+
+    &:hover {
+      background: linear-gradient(76deg, #3bc090 14.59%, #008555 76.02%);
+      background-position: top left 0;
+      color: $color-text__white;
+
+      picture {
+        // opacity: 0.7;
+
+        filter: grayscale(100%);
+        // scale: 1.05;
+      }
+
+      .video-recipes__info {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &--title {
+      max-width: 264px;
+      padding-bottom: 14px;
+      font-weight: 700;
+      font-size: $font__text--large;
+      line-height: 116%; /* 27.84px */
+    }
+
+    &--description {
+      font-size: $font__text--big;
+      line-height: 112%; /* 20.16px */
+    }
+  }
+}

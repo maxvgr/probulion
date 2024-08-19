@@ -39,8 +39,8 @@ new Swiper("#slider .swiper", {
 new Swiper("#popular .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 5.2,
-  spaceBetween: 20,
+  slidesPerView: 4.78,
+  spaceBetween: 26,
   loop: true,
 
   speed: 2000,
@@ -64,8 +64,8 @@ new Swiper("#popular .swiper", {
 new Swiper("#products-all .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 5.2,
-  spaceBetween: 20,
+  slidesPerView: 4.78,
+  spaceBetween: 26,
   loop: true,
 
   speed: 2000,
@@ -76,8 +76,8 @@ new Swiper("#products-all .swiper", {
   },
 
   navigation: {
-    nextEl: "#popular .swiper-button-next",
-    prevEl: "#popular .swiper-button-prev",
+    nextEl: "#products-all .swiper-button-next",
+    prevEl: "#products-all .swiper-button-prev",
   },
 
   // pagination: {
