@@ -3,7 +3,70 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  background-color: #073f31;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1434" height="246" viewBox="0 0 1434 246" fill="none"><path d="M855.5 68.3807C662.7 92.7948 113.5 0.830505 0 0.830505L29 -2.59845L1460 -17V246C1431.83 242.342 1355.4 225.083 1275 185.308C1174.5 135.588 1096.5 37.8631 855.5 68.3807Z" fill="white"/></svg>');
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .footer {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: end;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  &__logo {
+    img {
+      background: #d3d3d3 50%;
+      mix-blend-mode: darken;
+    }
+  }
+
+  &__copyrights {
+    padding-top: 14px;
+    color: #a48b74;
+    font-size: 18px;
+    line-height: 135%; /* 24.3px */
+
+    span {
+      display: block;
+      padding-top: 15px;
+    }
+  }
+
+  &__menu,
+  &__links {
+    color: #e3d2c2;
+    font-size: 18px;
+    line-height: 155%; /* 27.9px */
+  }
+
+  &__socials {
+    display: flex;
+    gap: 14px;
+  }
+
+  &__phone {
+    padding-top: 27px;
+    color: #E3D2C2;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 155%; /* 46.5px */
+  }
+
+  &__mail {
+    color: #E3D2C2;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 155%; /* 34.1px */
+  }
+
+  &__creation {
+    color: #A5876B;
+    font-size: 18px;
+    line-height: 135%; /* 24.3px */
+  }
 }
