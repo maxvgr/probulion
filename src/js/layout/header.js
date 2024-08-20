@@ -12,6 +12,6 @@ hamburger.addEventListener("click", () => {
 
 catalog.addEventListener("click", () => {
   hiddenmenu.classList.toggle("is-active");
-  // mobileNavs.classList.toggle("is-active");
+  catalog.classList.toggle("is-active");
   // overlay.classList.toggle("is-active");
 });

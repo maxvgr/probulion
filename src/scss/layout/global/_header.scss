@@ -177,7 +177,8 @@
     }
 
     & > ul > li > ul > li {
-      padding: 5px 0 5px 20px;
+      padding: 5px 0 5px 30px;
+      font-size: 18px;
       white-space: wrap;
     }
 
@@ -204,8 +205,18 @@
         position: absolute;
         width: 17px;
         height: 10px;
-        margin-top: 10px;
+        margin-top: 8px;
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none"><path d="M0.5 1L8.5 9L16.5 1" stroke="%23078D4D" stroke-linecap="round"/></svg>');
+        transition: $transition-time ease;
+      }
+
+      &.is-active {
+        padding-bottom: 20px;
+
+        &::before {
+          transform: rotateX(180deg);
+        }
+
       }
     }
   }
