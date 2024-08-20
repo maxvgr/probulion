@@ -3,6 +3,7 @@ $grid-breakpoint: (
   tablet: 800px,
   notebook: 1200px,
   laptop: 1400px,
+  big-laptop: 1500px,
 ) !default;
 
 // Переменные для обратной адаптивности
@@ -10,3 +11,11 @@ $breakpoint-mobile: max-width map.get($grid-breakpoint, 'mobile');
 $breakpoint-tablet: max-width map.get($grid-breakpoint, 'tablet');
 $breakpoint-notebook: max-width map.get($grid-breakpoint, 'notebook');
 $breakpoint-laptop: max-width map.get($grid-breakpoint, 'laptop');
+$breakpoint-big-laptop: max-width map.get($grid-breakpoint, 'big-laptop');
+
+
+$mobile: 540px;
+$tablet: 800px;
+$notebook: 1200px;
+$laptop: 1400px;
+$big-laptop: 1500px;

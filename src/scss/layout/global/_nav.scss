@@ -12,16 +12,20 @@
   &__link {
   }
 
-
-
   &--header {
     .nav__list {
       display: flex;
       gap: 46px;
+
+      // @include breakpoint($breakpoint-big-laptop) {
+      //   gap: 31px;
+      // }
+      @media screen and (max-width: $big-laptop) {
+        gap: 31px;
+      }
     }
 
     .nav__item {
-
     }
 
     .nav__link {
@@ -37,7 +41,6 @@
     }
 
     .nav__item {
-
     }
 
     .nav__link {
