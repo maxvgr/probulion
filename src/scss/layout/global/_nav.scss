@@ -28,4 +28,20 @@
       font-size: 18px;
     }
   }
+
+  &--footer {
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .nav__item {
+
+    }
+
+    .nav__link {
+      font-size: 18px;
+    }
+  }
 }
