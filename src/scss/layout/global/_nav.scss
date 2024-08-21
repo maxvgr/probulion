@@ -47,4 +47,40 @@
       font-size: 18px;
     }
   }
+
+  &--breadcrumb {
+    .nav__list {
+      display: flex;
+      gap: 34px;
+      padding: 15px 50px;
+    }
+
+    .nav__item {
+      position: relative;
+      color: #CCB7A4;
+      font-size: 18px;
+      line-height: 140%; /* 25.2px */
+
+      & > a {
+        transition: $transition-time ease;
+        text-decoration-line: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+
+      &:not(:first-child) {
+        &::before {
+          content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none"><circle cx="2.5" cy="2.5" r="2.5" fill="%23D7CCC1"/></svg>');
+          position: absolute;
+          top: -3px;
+          left: -18px;
+          width: 5px;
+          margin-right: 6px;
+        }
+      }
+  }
+}
 }

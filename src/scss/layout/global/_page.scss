@@ -10,6 +10,11 @@
   min-width: 330px;
   min-height: 100vh;
 
+  .header-bottom__line {
+    display: block;
+    border-top: 1px solid #E3D2C2;
+  }
+
   & > main {
     flex-grow: 1;
   }

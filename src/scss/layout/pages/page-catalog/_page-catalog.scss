@@ -1,0 +1,19 @@
+#catalog {
+
+}
+
+.catalog {
+  &__title {
+    padding-top: 55px;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+
+    @media screen and (max-width: $notebook) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+}
