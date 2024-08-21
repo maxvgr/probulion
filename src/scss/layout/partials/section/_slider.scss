@@ -33,7 +33,6 @@
           line-height: 130%; /* 75.4px */
           text-transform: uppercase;
 
-
           @media screen and (max-width: $desktop) {
             font-size: 48px;
           }
@@ -70,7 +69,8 @@
       }
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
       top: auto;
       bottom: 45px;
       width: 54px;
@@ -105,7 +105,7 @@
     .swiper-button-prev {
       right: 216px;
       left: auto;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 40 40' fill='none'%3e%3crect width='40' height='54' rx='27' transform='matrix(-1 0 0 1 40 0)' fill='white' fill-opacity='0.5'/%3e%3cpath d='M32 14L19.0968 26.5L32 39' stroke='%233D3D3D'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 54 54' fill='none'%3e%3crect width='54' height='54' rx='27' transform='matrix(-1 0 0 1 54 0)' fill='white' fill-opacity='0.5'/%3e%3cpath d='M32 14L19.0968 26.5L32 39' stroke='%233D3D3D'/%3e%3c/svg%3e");
 
       @media screen and (max-width: $notebook) {
         right: 70px;
@@ -114,7 +114,6 @@
       @media screen and (max-width: $tablet) {
         right: auto;
         left: 17px;
-
       }
     }
   }
