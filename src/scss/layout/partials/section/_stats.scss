@@ -1,15 +1,25 @@
 #stats {
   background-image: url("data:image/svg+xml,%3Csvg width='1920' height='313' viewBox='0 0 1920 313' fill='ffffff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z' fill='%23078D4D'/%3E%3C/svg%3E%0A");
   background-position: top 75px left;
-  background-size: 100%;
+  // background-size: 100%;
+
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $notebook) {
+    background-position: bottom right;
+  }
 }
 
 .stats {
   &__wrapper {
-    width: 1638px;
+    max-width: 1638px;
     margin: 0 auto;
     padding-bottom: 50px;
+
+    @media screen and (max-width: $tablet) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 
   &__header {
@@ -23,10 +33,34 @@
     font-weight: 700;
     font-size: 42px;
     font-family: $font-title;
+
+    @media screen and (max-width: $notebook) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
   }
 
   &__all {
     justify-self: end;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
+    &--down {
+      display: none;
+
+      @media screen and (max-width: $mobile) {
+        display: flex;
+      }
+
+      & > a {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
   }
 
   &__items {
@@ -34,6 +68,20 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 32px;
+
+    @media screen and (max-width: $notebook) {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 0;
+      // overflow-y: hidden;
+    }
+
+    @media screen and (max-width: $tablet) {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      // overflow-y: hidden;
+    }
   }
 
   &__item {
@@ -45,6 +93,13 @@
     background: $palette-white;
     box-shadow: 0 0 26px 0 #00552c66;
     transition: $transition-time ease;
+
+    @media screen and (max-width: $laptop) {
+      gap: 28px;
+    }
+    @media screen and (max-width: $mobile) {
+      padding-left: 33px;
+    }
 
     &:hover {
       background: linear-gradient(76deg, #3bc090 14.59%, #008555 76.02%);
@@ -60,6 +115,16 @@
     picture {
       min-width: 208px;
       transition: $transition-time ease;
+
+      @media screen and (max-width: $laptop) {
+        min-width: 148px;
+      }
+      @media screen and (max-width: $notebook) {
+        min-width: 138px;
+      }
+      @media screen and (max-width: $mobile) {
+       display: none;
+      }
     }
 
     &--title {
@@ -68,11 +133,23 @@
       font-weight: 700;
       font-size: $font__text--large;
       line-height: 140%; /* 33.6px */
+
+      @media screen and (max-width: $laptop) {
+        padding-top: 24px;
+        font-size: 22px;
+        line-height: 120%;
+      }
     }
 
     &--description {
       font-size: $font__text--big;
       line-height: 140%; /* 25.2px */
+
+      @media screen and (max-width: $laptop) {
+        padding-bottom: 24px;
+        font-size: 18px;
+        line-height: 120%;
+      }
     }
   }
 }

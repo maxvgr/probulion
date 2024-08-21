@@ -10,9 +10,12 @@
     // width: 1638px;
 
     margin: 0 auto;
-    padding: 66px 0 0;
-
+    padding: 66px 20px 0;
     // padding: 66px 10px 0;
+
+    @media screen and (max-width: $tablet) {
+      padding: 66px 10px 0;
+    }
   }
 
   &__header {
@@ -20,6 +23,10 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding-bottom: 36px;
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__title,
@@ -32,6 +39,10 @@
     font-weight: 700;
     font-size: 42px;
     font-family: $font-title;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
   }
 
   &__all {
