@@ -14,8 +14,8 @@
       linear-gradient(85deg, #ff6b6b 16.86%, #d9771b 91.4%);
 
     @media screen and (max-width: $notebook) {
-        gap: 17px;
-        padding: 56px 29px 50px 74px;
+      gap: 17px;
+      padding: 56px 29px 50px 74px;
     }
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr;

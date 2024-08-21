@@ -1,9 +1,12 @@
 #about-home {
   padding-top: 22px;
-  background-image: url('../assets/images/layout/section/about-home/logo.svg');
+  background-image: url("../assets/images/layout/section/about-home/logo.svg");
   background-position: top center;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: $tablet) {
+    background-image: none;
+  }
 }
 
 .about-home {
@@ -11,6 +14,14 @@
     font-weight: 700;
     font-size: 35px;
     font-family: $font-title;
+
+    @media screen and (max-width: $notebook) {
+      padding: 0 20px;
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
   }
 
   &__wrapper {
@@ -20,9 +31,20 @@
     justify-items: end;
     padding-bottom: 45px;
 
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
     picture {
       max-width: 667px;
       max-height: 408px;
+
+      @media screen and (max-width: $notebook) {
+        display: none;
+      }
     }
   }
 
@@ -30,6 +52,10 @@
     padding-top: 32px;
     font-size: 18px;
     line-height: 155%; /* 27.9px */
+
+    @media screen and (max-width: $mobile) {
+      padding-top: 22px;
+    }
 
     p {
       padding: 7px 0;
@@ -41,7 +67,10 @@
 
     .button {
       margin-top: 40px;
+
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
     }
   }
-
 }
