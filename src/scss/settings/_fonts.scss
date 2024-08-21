@@ -12,8 +12,14 @@
 @include font-face("Rubik", "../assets/fonts/Rubik/Rubik-Medium", 500);
 @include font-face("Rubik", "../assets/fonts/Rubik/Rubik-Bold", 700);
 
+@include font-face("GothamPro", "../assets/fonts/GothamPro/Gothampro-Light", 300);
+@include font-face("GothamPro", "../assets/fonts/GothamPro/Gothampro-Regular", 400);
+@include font-face("GothamPro", "../assets/fonts/GothamPro/Gothampro-Medium", 500);
+@include font-face("GothamPro", "../assets/fonts/GothamPro/Gothampro-Bold", 700);
+
 $font-default: "Lato", sans-serif; // Семейство по умолчанию
 $font-title: "Rubik", sans-serif; // Заголовки
+$font-second: "GothamPro", sans-serif; // некоторые тексты
 
 /* Размеры заголовков */
 $font__title--large: 64px;

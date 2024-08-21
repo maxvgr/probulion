@@ -39,11 +39,25 @@ new Swiper("#slider .swiper", {
 new Swiper("#popular .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 4.78,
+  slidesPerView: 1,
   spaceBetween: 26,
   loop: true,
-
   speed: 2000,
+
+  breakpoints: {
+    260: {
+      slidesPerView: 1.1,
+    },
+    360: {
+      slidesPerView: 2.15,
+    },
+    740: {
+      slidesPerView: 3.2,
+    },
+    1200: {
+      slidesPerView: 5.15,
+    },
+  },
 
   autoplay: {
     delay: 5000,
@@ -64,11 +78,25 @@ new Swiper("#popular .swiper", {
 new Swiper("#products-all .swiper", {
   modules: [Navigation, Autoplay],
 
-  slidesPerView: 4.78,
+  slidesPerView: 1,
   spaceBetween: 26,
   loop: true,
-
   speed: 2000,
+
+  breakpoints: {
+    260: {
+      slidesPerView: 1.1,
+    },
+    360: {
+      slidesPerView: 2.15,
+    },
+    740: {
+      slidesPerView: 3.2,
+    },
+    1200: {
+      slidesPerView: 5.15,
+    },
+  },
 
   autoplay: {
     delay: 5000,

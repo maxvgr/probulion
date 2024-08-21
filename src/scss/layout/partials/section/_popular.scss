@@ -1,10 +1,14 @@
 #popular {
+  .container {
+    // max-width: 1638px;
+  }
 
 }
 
 .popular {
   &__wrapper {
-    width: 1638px;
+    // width: 1638px;
+
     margin: 0 auto;
     padding: 66px 0 0;
 
@@ -33,6 +37,19 @@
   &__all {
     justify-content: flex-end;
     padding-right: 14px;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+
+    &--down {
+      display: none;
+
+      @media screen and (max-width: $tablet) {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   .swiper {
@@ -50,7 +67,12 @@
       background: $palette-white;
       box-shadow: 0 0 26px 0 #bbab9d66;
 
-      // box-shadow: 6px 7px 44px rgba(0, 0, 0, 0.54);
+      @media screen and (max-width: $laptop) {
+        padding: 34px 22px 29px;
+      }
+      @media screen and (max-width: $notebook) {
+        padding: 29px 10px;
+      }
 
       picture {
         justify-self: center;
@@ -65,11 +87,23 @@
         display: flex;
         gap: 6px;
 
+        @media screen and (max-width: $notebook) {
+          right: 16px;
+        }
+        @media screen and (max-width: $notebook) {
+          flex-direction: column;
+        }
+
         & > div {
           padding: 10px 11px;
           border-radius: 20px;
           color: $color-text__white;
           font-size: $font__text--small;
+
+          @media screen and (max-width: $notebook) {
+            padding: 4px 6px;
+            font-size: 12px;
+          }
         }
       }
 
@@ -90,6 +124,14 @@
         font-weight: 600;
         font-size: $font__text--large;
         line-height: 120%; /* 28.8px */
+
+        @media screen and (max-width: $big-laptop) {
+          font-size: 22px;
+          text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+          font-size: 16px;
+        }
       }
 
       &__weight {
@@ -98,23 +140,50 @@
         color: #ccb7a4;
         font-size: $font__text--big;
         line-height: 140%; /* 25.2px */
+
+        @media screen and (max-width: $big-laptop) {
+          text-align: center;
+        }
+        @media screen and (max-width: $tablet) {
+          font-size: 16px;
+        }
       }
 
       &__order {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: $big-laptop) {
+         flex-direction: column;
+         gap: 7px;
+        }
       }
 
       &__price {
         font-weight: 500;
         font-size: $font__title--small;
+
+        @media screen and (max-width: $big-laptop) {
+          font-size: 30px;
+         }
+         @media screen and (max-width: $tablet) {
+          font-size: 24px;
+        }
       }
 
       .button-popular {
         font-weight: 500;
         font-size: 20px;
         transition: $transition-time ease;
+
+        @media screen and (max-width: $big-laptop) {
+          width: auto;
+         }
+         @media screen and (max-width: $tablet) {
+          padding: 17px 40px;
+          font-size: 16px;
+        }
 
         &:hover {
           border: 1px solid #01614a;
