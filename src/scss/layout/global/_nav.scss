@@ -26,6 +26,9 @@
     }
 
     .nav__item {
+      &.current-menu-item {
+        opacity: 0.5;
+      }
     }
 
     .nav__link {

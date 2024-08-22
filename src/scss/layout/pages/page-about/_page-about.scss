@@ -1,0 +1,136 @@
+#about {
+
+}
+
+.about {
+  &__header {
+    max-height: 358px;
+    background-image: url('../assets/images/layout/pages/about/banner.jpg');
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 59px;
+    padding: 0 7px 3px 8px;
+    border-radius: 2px;
+    background-color: $palette-white;
+    color: #63A68E;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__slogan {
+    max-width: 550px;
+    padding-top: 22px;
+    padding-bottom: 60px;
+    color: $color-text__white;
+    font-weight: 700;
+    font-size: 52px;
+    font-family: $font-title;
+    line-height: 130%; /* 67.6px */
+    text-transform: uppercase;
+  }
+
+  &__advantages {
+    padding-top: 57px;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+
+    @media screen and (max-width: $notebook) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 33px;
+    margin-top: 37px;
+  }
+
+  &__item {
+    min-height: 146px;
+    padding: 19px 38px;
+    border-radius: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='83' viewBox='0 0 88 83' fill='none'%3E%3Ccircle cx='38' cy='33' r='50' fill='%23E3D2C2'/%3E%3C/svg%3E");
+    background-position: top left;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 25px 0 rgba(0, 85, 44, 0.20);
+    font-size: 18px;
+    line-height: 112%; /* 20.16px */
+
+    &--title {
+      display: block;
+      padding-bottom: 14px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 116%; /* 27.84px */
+    }
+
+    &--last {
+      padding: 19px 28px;
+      background: url('../assets/images/layout/pages/about/last-item-bg.png'), linear-gradient(76deg, #3BC090 14.59%, #008555 76.02%);
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      color: $color-text__white;
+
+      .about__item--title {
+        padding-bottom: 4px;
+        color: $color-text__white;
+        font-size: 26px;
+      }
+
+      .button {
+        margin-top: 14px;
+      }
+    }
+  }
+
+  &-begin {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 606px;
+      gap: 78px;
+      margin-top: 54px;
+
+      .button {
+        margin-top: 40px;
+      }
+    }
+
+    &__title {
+      padding-bottom: 40px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 116%; /* 37.12px */
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 163%; /* 29.34px */
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+
+        li {
+          padding: 12px 0 12px 31px;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='53' height='53' viewBox='0 0 53 53' fill='none'%3E%3Cellipse cx='26.5029' cy='26.5' rx='26.5029' ry='26.5' fill='%23E3D2C2'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+
+  }
+}
