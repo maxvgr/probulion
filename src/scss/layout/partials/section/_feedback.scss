@@ -90,4 +90,10 @@
       outline-width: 0;
     }
   }
+
+  &__top {
+    position: relative;
+    z-index: -1;
+    margin-top: -170px;
+  }
 }

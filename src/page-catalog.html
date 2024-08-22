@@ -12,42 +12,106 @@
     <div id="page-home" class="page__body">
       <section id="catalog" class="section">
         <div class="container">
-          <div class="page__breadcrumbs">
-            <nav class="nav nav--breadcrumb">
-              <ol class="nav__list">
-                <li class="nav__item">
-                  <a href="/" class="nav__link" title="Главная">
-                    <span>Главная</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="/" class="nav__link" title="Каталог">
-                    <span>Каталог</span>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <span class="nav__link">Костный куриный бульон</span>
-                </li>
-              </ol>
-            </nav>
-          </div>
-          <!-- /.page__breadcrumbs -->
+          <div class="catalog__wrapper">
+            <div class="page__breadcrumbs">
+              <nav class="nav nav--breadcrumb">
+                <ol class="nav__list">
+                  <li class="nav__item">
+                    <a href="/" class="nav__link" title="Главная">
+                      <span>Главная</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="/" class="nav__link" title="Каталог">
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <span class="nav__link">Костный куриный бульон</span>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <!-- /.page__breadcrumbs -->
+            <div class="catalog__title">
+              Каталог
+            </div>
+            <!-- /.catalog__title -->
+            <div class="catalog__items">
+              <div class="catalog__item">
+                <picture class="lazy">
+                  <img alt="" class="image image--cover lazy__item"
+                    data-src="assets/images/layout/section/popular/product.jpg">
+                </picture>
+                <div class="catalog__item--labels">
+                  <div class="catalog__item--day">
+                    Товар дня
+                  </div>
+                  <!-- /.catalog__item--day -->
+                  <div class="catalog__item--popular">
+                    Популярное
+                  </div>
+                  <!-- /.catalog__item--popular -->
+                  <div class="catalog__item--new">
+                    Новинка
+                  </div>
+                  <!-- /.catalog__item--new -->
+                </div>
+                <!-- /.catalog__item--labels -->
+                <div class="catalog__item--title">
+                  <a href="#">Костный куриный бульон<br>в две строчки</a>
+                </div>
+                <!-- /.catalog__item--title -->
+                <span class="catalog__item--weight">400г</span>
+                <div class="catalog__item--order">
+                  <span class="catalog__item--price">400 ₽</span>
+                  <a class="button button-primary button-popular" href="#">В корзину</a>
+                </div>
+                <!-- /.catalog__item--order -->
+              </div>
+              <!-- /.catalog__item -->
 
-          <div class="catalog__title">
-            Каталог
-          </div>
-          <!-- /.catalog__title -->
+              <include src="layout/template/card/product-card.html"></include>
 
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+              <include src="layout/template/card/product-card.html"></include>
+
+            </div>
+            <!-- /.catalog__items -->
+
+            <include src="layout/template/pagination.html"></include>
+          </div>
+          <!-- /.catalog__wrapper -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- /#breadcrumbs.section -->
+      <!-- /#catalog.section -->
 
-
-
-
-
-
+      <div class="feedback__top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none">
+          <path
+            d="M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z"
+            fill="#078D4D" />
+        </svg>
+      </div>
+      <!-- /.feedback__top -->
 
       <include src="layout/template/feedback.html"></include>
 
@@ -59,4 +123,3 @@
 </body>
 
 </html>
-

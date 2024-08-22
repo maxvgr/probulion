@@ -52,12 +52,12 @@
     .nav__list {
       display: flex;
       gap: 34px;
-      padding: 15px 50px;
+      padding: 15px 0;
     }
 
     .nav__item {
       position: relative;
-      color: #CCB7A4;
+      color: #ccb7a4;
       font-size: 18px;
       line-height: 140%; /* 25.2px */
 
@@ -70,7 +70,6 @@
         }
       }
 
-
       &:not(:first-child) {
         &::before {
           content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none"><circle cx="2.5" cy="2.5" r="2.5" fill="%23D7CCC1"/></svg>');
@@ -81,6 +80,24 @@
           margin-right: 6px;
         }
       }
+    }
   }
-}
+
+  &--pagination {
+    .nav__list {
+      display: flex;
+      gap: 22px;
+    }
+
+    .nav__link {
+      color: #AB9178;
+      font-weight: 700;
+      font-size: 18px;
+      font-family: $font-title;
+
+      &.current {
+        opacity: 0.3;
+      }
+    }
+  }
 }
