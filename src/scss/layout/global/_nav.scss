@@ -53,6 +53,11 @@
       display: flex;
       gap: 34px;
       padding: 15px 0;
+
+
+      @media screen and (max-width: $tablet) {
+        gap: 16px;
+      }
     }
 
     .nav__item {
@@ -60,6 +65,10 @@
       color: #ccb7a4;
       font-size: 18px;
       line-height: 140%; /* 25.2px */
+
+      @media screen and (max-width: $notebook) {
+        font-size: 13px;
+      }
 
       & > a {
         transition: $transition-time ease;
@@ -78,6 +87,10 @@
           left: -18px;
           width: 5px;
           margin-right: 6px;
+
+          @media screen and (max-width: $tablet) {
+            left: -10px;
+          }
         }
       }
     }

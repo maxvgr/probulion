@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+  <span class="header-bottom__line"></span>
+  <!-- /.header-bottom__line -->
+
+  <main>
+    <div id="page-catalog-inter" class="page__body">
+      <section id="catalog-inter" class="section">
+        <div class="container">
+            <include src="layout/template/breadcrumbs.html"></include>
+
+            <div class="catalog-inter__wrapper">
+              <div class="catalog-inter__images">
+                <a href="#">
+                  <picture class="lazy">
+                    <img alt="" class="image image--cover lazy__item"
+                      data-src="assets/images/layout/section/popular/product.jpg">
+                  </picture>
+                </a>
+                <div class="catalog-inter__previews">
+                  <a href="#">
+                    <picture class="lazy">
+                      <img alt="" class="image image--cover lazy__item"
+                        data-src="assets/images/layout/section/popular/product.jpg">
+                    </picture>
+                  </a>
+                  <a href="#">
+                    <picture class="lazy">
+                      <img alt="" class="image image--cover lazy__item"
+                        data-src="assets/images/layout/section/popular/product.jpg">
+                    </picture>
+                  </a>
+                  <a href="#">
+                    <picture class="lazy">
+                      <img alt="" class="image image--cover lazy__item"
+                        data-src="assets/images/layout/section/popular/product.jpg">
+                    </picture>
+                  </a>
+                </div>
+                <!-- /.catalog-inter__previews -->
+
+              </div>
+              <!-- /.catalog-inter__images -->
+              <div class="catalog-inter__info">
+                <div class="catalog-inter__title">
+                  Костный куриный бульон
+                </div>
+                <!-- /.catalog-inter__title -->
+                <div class="catalog-inter__weight">
+                  400г
+                </div>
+                <!-- /.catalog-inter__weight -->
+                <div class="catalog-inter__order">
+                  <div class="catalog-inter__price">
+                    400 ₽
+                  </div>
+                  <!-- /.catalog-inter__price -->
+                  <a href="#" class="button button-primary">В корзину</a>
+                </div>
+                <!-- /.catalog-inter__order -->
+                <div class="catalog-inter__description">
+                  <strong>Описание</strong>
+                  Знакомый с детства горячий вкусный куриный бульон, которым бабушка поила нас во время простуды. Что может быть лучше? Только правильный костный бульон из курицы. Он такой же вкусный, как бульон из курицы в старые времена, но в несколько раз полезнее благодаря нашей технологии изготовления.
+                </div>
+                <!-- /.catalog-inter__description -->
+                <div class="catalog-inter__sostav">
+                  <strong>Состав</strong>
+                  Кости пищевые куриные, вода питьевая очищенная, лук репчатый, морковь, сельдерей, имбирь, уксус яблочный, соль, зелень петрушки, перец чёрный, кориандр, лист лавровый.
+                </div>
+                <!-- /.catalog-inter__sostav -->
+                <ul class="catalog-inter__calorag">
+                  <li>кДж<span>115</span></li>
+                  <li>кКал<span>115</span></li>
+                  <li>Жиры<span>0.5г</span></li>
+                  <li>Белки<span>1.5г</span></li>
+                </ul>
+                <!-- /.catalog-inter__calorag -->
+
+              </div>
+              <!-- /.catalog-inter__info -->
+
+            </div>
+            <!-- /.catalog-inter__wrapper -->
+
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#catalog-inter.section -->
+
+      <section id="popular" class="section popular">
+        <div class="container">
+          <div class="popular__wrapper">
+            <div class="popular__header">
+              <div class="popular__title">
+                Обязательно попробуйте
+              </div>
+              <!-- /.popular__title -->
+              <div class="popular__all">
+                <a href="#" class="button button-primary">Смотреть все</a>
+              </div>
+              <!-- /.popular__all -->
+            </div>
+            <!-- /.popular__header -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="lazy">
+                    <img alt="" class="image image--cover lazy__item"
+                      data-src="assets/images/layout/section/popular/product.jpg">
+                  </picture>
+                  <div class="swiper-slide__labels">
+                    <!-- <div class="swiper-slide__day">
+                      Товар дня
+                    </div> -->
+                    <!-- /.swiper-slide__day -->
+                    <div class="swiper-slide__popular">
+                      Популярное
+                    </div>
+                    <!-- /.swiper-slide__popular -->
+                    <div class="swiper-slide__new">
+                      Новинка
+                    </div>
+                    <!-- /.swiper-slide__new -->
+                  </div>
+                  <!-- /.swiper-slide__labels -->
+                  <div class="swiper-slide__title">
+                    <a href="#"> Костный куриный бульон<br>в две строчки</a>
+                  </div>
+                  <!-- /.swiper-slide__title -->
+                  <span class="swiper-slide__weight">400г</span>
+                  <div class="swiper-slide__order">
+                    <span class="swiper-slide__price">400 ₽</span>
+                    <a class="button button-primary button-popular" href="#">В корзину</a>
+                  </div>
+                  <!-- /.swiper-slide__order -->
+                </div>
+                <!-- /.swiper-slide -->
+                <include src="layout/template/card/product-slide.html"></include>
+
+                <include src="layout/template/card/product-slide.html"></include>
+
+                <include src="layout/template/card/product-slide.html"></include>
+
+                <include src="layout/template/card/product-slide.html"></include>
+
+                <include src="layout/template/card/product-slide.html"></include>
+
+              </div>
+              <!-- /.swiper-wrapper -->
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <!-- /.swiper -->
+
+            <div class="popular__all--down">
+              <a href="#" class="button button-secondary">Смотреть все</a>
+            </div>
+            <!-- /.popular__all -->
+          </div>
+          <!-- /.popular__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <div class="feedback__top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none">
+          <path
+            d="M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z"
+            fill="#078D4D" />
+        </svg>
+      </div>
+      <!-- /.feedback__top -->
+
+      <section id="video-recipes" class="section">
+        <div class="container">
+          <div class="video-recipes__wrapper">
+            <div class="video-recipes__title">
+              Видеорецепты
+            </div>
+            <!-- /.video-recipes__title -->
+            <div class="video-recipes__items">
+
+              <include src="layout/template/video-recipes.html"></include>
+
+              <include src="layout/template/video-recipes.html"></include>
+
+              <include src="layout/template/video-recipes.html"></include>
+
+              <include src="layout/template/video-recipes.html"></include>
+
+            </div>
+            <!-- /.video-recipes__items -->
+          </div>
+          <!-- /.video-recipes__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#video-recipes.section -->
+
+
+      <include src="layout/template/feedback.html"></include>
+
+      </div>
+      <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>

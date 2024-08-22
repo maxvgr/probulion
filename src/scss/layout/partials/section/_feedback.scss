@@ -95,5 +95,29 @@
     position: relative;
     z-index: -1;
     margin-top: -170px;
+    // background-color: #078D4D;
+
+    @media screen and (max-width: $notebook) {
+      margin-top: -140px;
+      margin-bottom: -70px;
+    }
+    @media screen and (max-width: $tablet) {
+      margin-top: -130px;
+      margin-bottom: -100px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-bottom: -110px;
+    }
+
+    svg {
+      @media screen and (max-width: $laptop) {
+        position: relative;
+        right: 250px;
+      }
+      @media screen and (max-width: $notebook) {
+        right: 0;
+        width: 100%;
+      }
+    }
   }
 }

@@ -5,6 +5,10 @@
 .catalog {
   &__wrapper {
     padding-left: 50px;
+
+    @media screen and (max-width: $notebook) {
+      padding: 0 5px;
+    }
   }
 
   &__title {
@@ -17,6 +21,7 @@
       font-size: 40px;
     }
     @media screen and (max-width: $tablet) {
+      padding-top: 32px;
       font-size: 30px;
     }
   }
@@ -27,6 +32,16 @@
     gap: 26px;
     padding-top: 36px;
     padding-bottom: 64px;
+
+    @media screen and (max-width: $laptop) {
+      gap: 21px;
+    }
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -64,7 +79,7 @@
       @media screen and (max-width: $notebook) {
         right: 16px;
       }
-      @media screen and (max-width: $notebook) {
+      @media screen and (max-width: $tablet) {
         flex-direction: column;
       }
 

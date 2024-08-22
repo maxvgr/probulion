@@ -1,0 +1,127 @@
+#catalog-inter {
+}
+
+#page-catalog-inter {
+  .feedback__top {
+    margin-top: -270px;
+  }
+}
+
+.catalog-inter {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 37px;
+    padding-top: 46px;
+
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 0 15px;
+    }
+  }
+
+  &__images {
+    & > a > picture {
+      padding: 0 48px;
+
+      @media screen and (max-width: $notebook) {
+        max-width: 400px;
+      }
+      @media screen and (max-width: $mobile) {
+        max-width: unset;
+      }
+    }
+  }
+
+  &__previews {
+    display: flex;
+    gap: 21px;
+    justify-content: center;
+
+    picture {
+      max-width: 95px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 38px;
+    font-family: $font-title;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &__weight {
+    padding-top: 3px;
+    color: #ccb7a4;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+
+    @media screen and (max-width: $mobile) {
+      font-size: 13px;
+    }
+  }
+
+  &__order {
+    display: flex;
+    gap: 37px;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 8px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 34px;
+  }
+
+  &__description,
+  &__sostav {
+    padding-top: 26px;
+    font-size: 18px;
+    line-height: 140%; /* 25.2px */
+
+    @media screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
+
+    strong {
+      display: block;
+      padding-bottom: 9px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%; /* 28.8px */
+
+      @media screen and (max-width: $mobile) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__calorag {
+    display: flex;
+    gap: 19px;
+    padding-top: 34px;
+    font-weight: 500;
+    font-size: 18px;
+
+    & > li {
+      padding: 17px 16px;
+      border: 1px solid #D0D0D0;
+      border-radius: 2px;
+      text-align: center;
+
+      span {
+        display: block;
+        font-size: 24px;
+      }
+    }
+
+
+  }
+}
