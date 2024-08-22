@@ -11,9 +11,9 @@
   }
 
   .video-recipes__wrapper {
-    // @media screen and (max-width: $tablet) {
-    //   padding-top: 100px;
-    // }
+    @media screen and (max-width: $notebook) {
+      padding-top: 100px;
+    }
   }
 }
 

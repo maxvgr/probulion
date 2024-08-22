@@ -79,6 +79,7 @@
     "create": "node ./node_scripts/create.js"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "imask": "^7.4.0",
     "swiper": "^11.1.9",
     "vanilla-lazyload": "^17.8.5"
