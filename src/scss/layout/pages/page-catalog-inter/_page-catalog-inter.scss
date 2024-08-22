@@ -4,6 +4,16 @@
 #page-catalog-inter {
   .feedback__top {
     margin-top: -270px;
+
+    // @media screen and (max-width: $notebook) {
+    //   margin-top: -170px;
+    // }
+  }
+
+  .video-recipes__wrapper {
+    // @media screen and (max-width: $tablet) {
+    //   padding-top: 100px;
+    // }
   }
 }
 
