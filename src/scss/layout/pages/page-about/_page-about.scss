@@ -1,3 +1,13 @@
+#page-about {
+  section#reviews {
+    margin-top: -50px;
+
+    @media screen and (max-width: $notebook) {
+      display: none;
+    }
+  }
+}
+
 #about {
 
 }
@@ -6,7 +16,26 @@
   &__header {
     max-height: 358px;
     background-image: url('../assets/images/layout/pages/about/banner.jpg');
+    background-position: top right;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: $laptop) {
+
+    }
+    @media screen and (max-width: $notebook) {
+      background-position: top right -400px;
+    }
+    @media screen and (max-width: $tablet-big) {
+      background-image: url('../assets/images/layout/pages/about/banner768.jpg');
+      background-position: top right;
+      background-size: cover;
+    }
+    @media screen and (max-width: $tablet) {
+      background-image: url('../assets/images/layout/pages/about/banner360.jpg');
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 0 15px;
+    }
   }
 
   &__title {
@@ -21,6 +50,11 @@
     font-weight: 500;
     font-size: 20px;
     text-transform: uppercase;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 35px;
+      font-size: 13px;
+    }
   }
 
   &__slogan {
@@ -33,6 +67,17 @@
     font-family: $font-title;
     line-height: 130%; /* 67.6px */
     text-transform: uppercase;
+
+    @media screen and (max-width: $notebook) {
+      padding-bottom: 100px;
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      max-width: 210px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
   }
 
   &__advantages {
@@ -44,7 +89,11 @@
     @media screen and (max-width: $notebook) {
       font-size: 40px;
     }
+    @media screen and (max-width: $tablet-big) {
+      padding: 57px 20px 0;
+    }
     @media screen and (max-width: $tablet) {
+      padding-top: 32px;
       font-size: 30px;
     }
   }
@@ -54,6 +103,16 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 33px;
     margin-top: 37px;
+
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: $tablet-big) {
+      padding: 0 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -67,12 +126,20 @@
     font-size: 18px;
     line-height: 112%; /* 20.16px */
 
+    @media screen and (max-width: $tablet) {
+      font-size: 15px;
+    }
+
     &--title {
       display: block;
       padding-bottom: 14px;
       font-weight: 700;
       font-size: 24px;
       line-height: 116%; /* 27.84px */
+
+      @media screen and (max-width: $tablet) {
+        font-size: 20px;
+      }
     }
 
     &--last {
@@ -86,6 +153,10 @@
         padding-bottom: 4px;
         color: $color-text__white;
         font-size: 26px;
+
+        @media screen and (max-width: $tablet) {
+          font-size: 20px;
+        }
       }
 
       .button {
@@ -95,27 +166,15 @@
   }
 
   &-begin {
-    &__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 606px;
-      gap: 78px;
-      margin-top: 54px;
-
-      .button {
-        margin-top: 40px;
-      }
-    }
-
-    &__title {
-      padding-bottom: 40px;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 116%; /* 37.12px */
-    }
-
     &__description {
       font-size: 18px;
       line-height: 163%; /* 29.34px */
+
+      @media screen and (max-width: $mobile) {
+        // padding: 0 15px;
+
+        font-size: 15px;
+      }
 
       ul {
         display: flex;
@@ -127,10 +186,162 @@
           padding: 12px 0 12px 31px;
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='53' height='53' viewBox='0 0 53 53' fill='none'%3E%3Cellipse cx='26.5029' cy='26.5' rx='26.5029' ry='26.5' fill='%23E3D2C2'/%3E%3C/svg%3E");
           background-repeat: no-repeat;
+          font-size: 18px;
+
+          @media screen and (max-width: $mobile) {
+            padding: 15px 0 15px 31px;
+          }
         }
       }
     }
 
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 606px;
+      gap: 78px;
+      margin-top: 54px;
 
+      @media screen and (max-width: $notebook) {
+        grid-template-columns: 1fr;
+      }
+      @media screen and (max-width: $mobile) {
+        gap: 40px;
+        margin-top: 40px;
+        padding: 0 15px;
+      }
+
+      &--second {
+        grid-template-columns: 606px 1fr;
+
+        @media screen and (max-width: $notebook) {
+          grid-template-columns: 1fr;
+
+          .about-begin__image {
+            grid-row: 2/3;
+          }
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+          margin-top: 20px;
+
+          @media screen and (max-width: $mobile) {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+
+      .button {
+        margin-top: 40px;
+
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+          margin-top: 23px;
+        }
+      }
+    }
+
+    &__title {
+      padding-bottom: 40px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 116%; /* 37.12px */
+
+      @media screen and (max-width: $mobile) {
+        padding-bottom: 20px;
+        font-size: 24px;
+      }
+    }
+
+
+  }
+
+  &-down {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 33px;
+      padding-top: 72px;
+
+      @media screen and (max-width: $notebook) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+      }
+      @media screen and (max-width: $mobile) {
+        gap: 20px;
+        padding: 40px 15px 0;
+      }
+    }
+
+    &__item {
+      padding: 19px 38px;
+      border-radius: 20px;
+      background-color: $palette-white;
+      box-shadow: 0 0 25px 0 #00552c33;
+      font-size: 18px;
+      line-height: 112%; /* 20.16px */
+
+      span {
+        display: block;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 116%; /* 27.84px */
+      }
+
+      // &--last {
+
+      // }
+
+      &--last {
+        grid-column: 3/5;
+        padding: 19px 28px;
+        background: url('../assets/images/layout/pages/about/last-item-big-bg.png'), linear-gradient(76deg, #3BC090 14.59%, #008555 76.02%);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        color: $color-text__white;
+
+        @media screen and (max-width: $notebook) {
+          grid-column: 1/3;
+        }
+        @media screen and (max-width: $tablet) {
+          grid-column: 1/2;
+          background-size: 50%, 100%;
+        }
+        @media screen and (max-width: $mobile) {
+          background-size: 40%, 100%;
+        }
+
+        .about-down__title {
+          padding-top: 36px;
+          padding-bottom: 4px;
+          color: $color-text__white;
+          font-size: 34px;
+
+          @media screen and (max-width: $tablet) {
+            padding-top: 15px;
+            font-size: 26px;
+          }
+          @media screen and (max-width: $mobile) {
+            font-size: 20px;
+          }
+        }
+
+        .button {
+          display: inline-block;
+          margin-top: 26px;
+          margin-bottom: 42px;
+
+          @media screen and (max-width: $mobile) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 }

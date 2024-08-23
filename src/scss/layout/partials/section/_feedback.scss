@@ -2,6 +2,10 @@
   padding-bottom: 46px;
   background-image: url('data:image/svg+xml,<svg width="1920" height="322" viewBox="0 0 1920 322" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1926 -0.458679H1882.5H0V315.541C362.5 366.041 773.5 103.041 970 128.041C1162 147.041 1440.5 202.041 1668 183.541C1839.6 165.141 1911.5 122.208 1926 103.041V-0.458679Z" fill="%23078D4D"/></svg>');
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0 15px;
+  }
 }
 
 .feedback {

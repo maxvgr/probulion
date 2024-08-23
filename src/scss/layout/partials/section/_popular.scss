@@ -2,7 +2,6 @@
   .container {
     // max-width: 1638px;
   }
-
 }
 
 .popular {
@@ -169,8 +168,8 @@
         justify-content: space-between;
 
         @media screen and (max-width: $big-laptop) {
-         flex-direction: column;
-         gap: 7px;
+          flex-direction: column;
+          gap: 7px;
         }
       }
 
@@ -180,8 +179,8 @@
 
         @media screen and (max-width: $big-laptop) {
           font-size: 30px;
-         }
-         @media screen and (max-width: $tablet) {
+        }
+        @media screen and (max-width: $tablet) {
           font-size: 24px;
         }
       }
@@ -193,8 +192,8 @@
 
         @media screen and (max-width: $big-laptop) {
           width: auto;
-         }
-         @media screen and (max-width: $tablet) {
+        }
+        @media screen and (max-width: $tablet) {
           padding: 17px 40px;
           font-size: 16px;
         }
