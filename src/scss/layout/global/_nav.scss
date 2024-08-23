@@ -117,3 +117,15 @@
     }
   }
 }
+
+.pagination-page__nav {
+  a.image-container {
+    & > svg {
+      transition: $transition-time ease;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

@@ -29,7 +29,7 @@
     grid-template-columns: 1.3fr 1fr;
     gap: 48px;
     justify-items: end;
-    padding-bottom: 45px;
+    padding-bottom: 64px;
 
     @media screen and (max-width: $notebook) {
       grid-template-columns: 1fr;

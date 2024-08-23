@@ -42,7 +42,7 @@ new Swiper("#popular .swiper", {
   slidesPerView: 1,
   spaceBetween: 26,
   loop: true,
-  speed: 2000,
+  // speed: 2000,
 
   breakpoints: {
     260: {
@@ -55,14 +55,14 @@ new Swiper("#popular .swiper", {
       slidesPerView: 3.2,
     },
     1200: {
-      slidesPerView: 5.15,
+      slidesPerView: 4.8,
     },
   },
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   navigation: {
     nextEl: "#popular .swiper-button-next",
@@ -81,7 +81,7 @@ new Swiper("#products-all .swiper", {
   slidesPerView: 1,
   spaceBetween: 26,
   loop: true,
-  speed: 2000,
+  // speed: 2000,
 
   breakpoints: {
     260: {
@@ -94,14 +94,14 @@ new Swiper("#products-all .swiper", {
       slidesPerView: 3.2,
     },
     1200: {
-      slidesPerView: 5.15,
+      slidesPerView: 4.8,
     },
   },
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   navigation: {
     nextEl: "#products-all .swiper-button-next",

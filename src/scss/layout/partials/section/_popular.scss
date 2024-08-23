@@ -198,6 +198,14 @@
           padding: 17px 40px;
           font-size: 16px;
         }
+        @media screen and (max-width: $mini) {
+          padding: 10px 20px;
+          font-size: 15px;
+        }
+        @media screen and (max-width: $mobile-mini) {
+          padding: 17px 40px;
+          font-size: 16px;
+        }
 
         &:hover {
           border: 1px solid #01614a;
@@ -213,9 +221,14 @@
 
       width: 43px;
       height: 94px;
+      transition: $transition-time ease;
 
       &::after {
         display: none;
+      }
+
+      &:hover {
+        filter: brightness(70%);
       }
     }
 

@@ -57,6 +57,7 @@
 
         .button-slide {
           margin-top: 75px;
+          padding: 26px 51px;
           border: none;
 
           @media screen and (max-width: $notebook) {
@@ -75,6 +76,7 @@
       bottom: 45px;
       width: 54px;
       height: 54px;
+      transition: $transition-time ease;
 
       @media screen and (max-width: $notebook) {
         bottom: 15px;
@@ -84,6 +86,10 @@
 
       &::after {
         display: none;
+      }
+
+      &:hover {
+        opacity: 0.5;
       }
     }
 

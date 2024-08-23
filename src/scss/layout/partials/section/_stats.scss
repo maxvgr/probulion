@@ -106,9 +106,16 @@
       background-position: top left 208px;
       color: $color-text__white;
 
+      @media screen and (max-width: $laptop) {
+        background-position: top left 148px;
+      }
+      @media screen and (max-width: $notebook) {
+        background-position: top left 138px;
+      }
+
 
       picture {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
       }
     }
 
