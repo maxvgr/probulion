@@ -89,7 +89,11 @@
       }
 
       &:hover {
-        opacity: 0.5;
+        // opacity: 0.5;
+
+        filter: brightness(120%);
+
+        // filter: contrast(150%);
       }
     }
 
