@@ -1,0 +1,67 @@
+#page-video-recipes {
+  .news-inter {
+    .container {
+      @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+      }
+    }
+
+    .about__slogan {
+      max-width: 1300px;
+      padding-top: 66px;
+      padding-bottom: 100px;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 78px;
+      padding-top: 40px;
+
+      @media screen and (max-width: $laptop) {
+        padding-bottom: 50px;
+      }
+      @media screen and (max-width: $notebook) {
+        gap: 20px;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__image {
+      overflow: hidden;
+      margin-top: -100px;
+      border-radius: 25px;
+
+      @media screen and (max-width: $laptop) {
+        margin-top: 0;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-row: 1/2;
+      }
+
+      picture > img {
+        max-height: 730px;
+      }
+    }
+
+    &__text {
+      color: $color-text__black;
+      font-size: 18px;
+      line-height: 163%; /* 29.34px */
+
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
+    .button {
+      margin-top: 20px;
+
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+  }
+}
