@@ -1,0 +1,55 @@
+#page-video-recipes {
+  .about {
+    &__slogan {
+      max-width: 900px;
+    }
+
+    &__header {
+      background-image: url("../assets/images/layout/pages/for-whom/banner.jpg");
+
+      @media screen and (max-width: $notebook) {
+        background-position: top right -400px;
+      }
+      @media screen and (max-width: $tablet-big) {
+        background-image: url("../assets/images/layout/pages/for-whom/banner768.jpg");
+        background-position: top right;
+        background-size: cover;
+      }
+      @media screen and (max-width: $tablet) {
+        background-image: url("../assets/images/layout/pages/for-whom/banner360.jpg");
+      }
+      @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .video-recipes__items {
+    padding-top: 62px;
+    padding-bottom: 22px;
+
+      @media screen and (max-width: $laptop) {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        // overflow-y: hidden;
+      }
+      @media screen and (max-width: $notebook) {
+        grid-template-columns: repeat(2, 1fr);
+        // overflow-y: hidden;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        // overflow-y: hidden;
+      }
+
+  }
+}
+
+#video-recipes-footer {
+  #footer {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1434" height="246" viewBox="0 0 1434 246" fill="none"><path d="M855.5 68.3807C662.7 92.7948 113.5 0.830505 0 0.830505L29 -2.59845L1460 -17V246C1431.83 242.342 1355.4 225.083 1275 185.308C1174.5 135.588 1096.5 37.8631 855.5 68.3807Z" fill="%23078D4D"/></svg>');
+  }
+}
