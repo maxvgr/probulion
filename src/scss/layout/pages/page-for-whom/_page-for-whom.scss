@@ -1,0 +1,58 @@
+#page-for-whom {
+  .about {
+    &__slogan {
+      max-width: 900px;
+    }
+
+    &__header {
+      background-image: url('../assets/images/layout/pages/for-whom/banner.jpg');
+
+      // @media screen and (max-width: $laptop) {
+
+      // }
+
+      @media screen and (max-width: $notebook) {
+        background-position: top right -400px;
+      }
+      @media screen and (max-width: $tablet-big) {
+        background-image: url('../assets/images/layout/pages/about/banner768.jpg');
+        background-position: top right;
+        background-size: cover;
+      }
+      @media screen and (max-width: $tablet) {
+        background-image: url('../assets/images/layout/pages/about/banner360.jpg');
+      }
+      @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+      }
+    }
+
+    &-down__wrapper {
+      padding-top: 37px;
+    }
+  }
+
+  #video-recipes {
+    margin-top: -50px;
+  }
+
+  .page-for-whom {
+    &__title {
+      padding-top: 57px;
+      font-weight: 700;
+      font-size: 42px;
+      font-family: $font-title;
+
+      @media screen and (max-width: $notebook) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: $tablet-big) {
+        padding: 57px 20px 0;
+      }
+      @media screen and (max-width: $tablet) {
+        padding-top: 32px;
+        font-size: 30px;
+      }
+    }
+  }
+}
