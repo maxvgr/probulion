@@ -1,0 +1,106 @@
+.news {
+  .container {
+    padding: 0 15px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-top: 59px;
+
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 23px;
+      padding-bottom: 100px;
+    }
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: $mobile) {
+      padding-top: 32px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    border-radius: 25px;
+    background: $palette-white;
+    box-shadow: 0 0 26px 0 #00552c33;
+    transition: $transition-time ease;
+
+    &:hover {
+      background: linear-gradient(76deg, #3bc090 14.59%, #008555 76.02%);
+      background-position: top left 0;
+      color: $color-text__white;
+
+      .news__info {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__image {
+    // max-height: 255px;
+
+    // @media screen and (max-width: $tablet) {
+    //   max-height: unset;
+    // }
+    // @media screen and (max-width: $mobile) {
+    //   max-height: 105px;
+    // }
+
+    picture > img {
+      max-height: 255px;
+
+      @media screen and (max-width: $tablet) {
+        max-height: 200px;
+      }
+      @media screen and (max-width: $mobile) {
+        max-height: 105px;
+      }
+
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding: 27px 35px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 27px;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 17px 15px 34px;
+    }
+
+    &::after {
+      content: url('data:image/svg+xml,<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9412H24.7353M24.7353 12.9412L12.7941 24.8824M24.7353 12.9412L12.7941 1" stroke="white" stroke-width="2"/></svg>');
+      position: absolute;
+      top: 30px;
+      right: 35px;
+      opacity: 0;
+      transition: $transition-time ease;
+    }
+  }
+
+  &__title {
+    max-width: 264px;
+    padding-bottom: 14px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 116%; /* 27.84px */
+
+    @media screen and (max-width: $notebook) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 112%; /* 20.16px */
+  }
+}
