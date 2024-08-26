@@ -1,0 +1,132 @@
+#video-recipe {
+  .container {
+    @media screen and (max-width: $mobile) {
+      padding: 0 15px;
+    }
+
+  }
+
+}
+
+.video-recipe {
+  &__title {
+    color: #8A7D7D;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: $font-title;
+
+    @media screen and (max-width: $notebook) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding-top: 45px;
+
+    @media screen and (max-width: $notebook) {
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+    }
+    @media screen and (max-width: $tablet) {
+      gap: 20px;
+    }
+  }
+
+  // &__image {
+
+  // }
+
+  &__product {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 116%; /* 27.84px */
+  }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13px;
+
+    @media screen and (max-width: $notebook) {
+      max-width: 65%;
+    }
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      max-width: unset;
+    }
+
+    .button {
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 34px;
+
+    span {
+      color: #BBAB9D;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  &__ingredients {
+    margin-top: 41px;
+    padding: 56px;
+    border-radius: 20px 150px 20px 20px;
+    background: #E3D2C2;
+
+    @media screen and (max-width: $tablet) {
+      padding: 56px 20px;
+    }
+
+    &--title {
+      padding-bottom: 25px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 116%; /* 37.12px */
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 18px;
+      line-height: 112%; /* 20.16px */
+
+      li {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &__description {
+    // padding-top: 35px;
+
+    color: $color-text__black;
+    font-size: 18px;
+    line-height: 163%; /* 29.34px */
+
+    p {
+      padding-bottom: 15px;
+    }
+  }
+}
+

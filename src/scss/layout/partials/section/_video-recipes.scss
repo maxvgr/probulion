@@ -115,6 +115,9 @@
       @media screen and (max-width: $tablet) {
         max-width: unset;
       }
+      @media screen and (max-width: $mobile) {
+        padding-right: 20px;
+      }
     }
 
     &--description {

@@ -13,4 +13,10 @@
     background-color: $palette-green;
     color: $color-text__white;
   }
+
+  &--dark {
+    border: 1px solid $palette-white;
+    background: #01614A;
+    color: $color-text__white;
+  }
 }
