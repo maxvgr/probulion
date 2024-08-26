@@ -5,7 +5,7 @@
     }
 
     &__header {
-      background-image: url('../assets/images/layout/pages/for-whom/banner.jpg');
+      background-image: url("../assets/images/layout/pages/for-whom/banner.jpg");
 
       // @media screen and (max-width: $laptop) {
 
@@ -15,12 +15,12 @@
         background-position: top right -400px;
       }
       @media screen and (max-width: $tablet-big) {
-        background-image: url('../assets/images/layout/pages/about/banner768.jpg');
+        background-image: url("../assets/images/layout/pages/for-whom/banner768.jpg");
         background-position: top right;
         background-size: cover;
       }
       @media screen and (max-width: $tablet) {
-        background-image: url('../assets/images/layout/pages/about/banner360.jpg');
+        background-image: url("../assets/images/layout/pages/for-whom/banner360.jpg");
       }
       @media screen and (max-width: $mobile) {
         padding: 0 15px;
