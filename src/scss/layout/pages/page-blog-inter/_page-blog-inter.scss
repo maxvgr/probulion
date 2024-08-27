@@ -1,0 +1,28 @@
+#page-video-recipes {
+  .blog-inter {
+    .about__slogan {
+      max-width: 1300px;
+    }
+  }
+}
+
+.blog-inter {
+  .container {
+    @media screen and (max-width: $mobile) {
+      padding: 0 15px;
+    }
+
+    .about__slogan {
+      // max-width: 1300px !important;
+
+      span {
+        padding-top: 33px;
+        color: #BBAB9D;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 112%; /* 20.16px */
+        text-transform: none;
+      }
+    }
+  }
+}
