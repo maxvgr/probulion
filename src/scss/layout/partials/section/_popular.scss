@@ -133,6 +133,9 @@
       }
 
       &__title {
+        overflow: hidden;
+        min-height: 60px;
+        max-height: 60px;
         padding-top: 23px;
         font-weight: 600;
         font-size: $font__text--large;
