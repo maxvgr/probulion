@@ -1,0 +1,50 @@
+.error {
+  &__title {
+    color: #04B575;
+    font-weight: 600;
+    font-size: 360px;
+    line-height: normal;
+    text-align: center;
+    opacity: 0.2;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 188px;
+    }
+  }
+
+  .video-recipe__description {
+    font-size: 18px;
+    font-family: $font-title;
+    text-align: center;
+
+    @media screen and (max-width: $notebook) {
+      padding-bottom: 50px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 15px;
+    }
+
+    strong {
+      display: block;
+      padding-bottom: 21px;
+      color: #3D3D3D;
+      font-weight: 700;
+      font-size: 22px;
+      font-family: $font-title;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 18px;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+
+  }
+}

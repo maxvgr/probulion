@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+  <span class="header-bottom__line"></span>
+  <!-- /.header-bottom__line -->
+
+  <main>
+    <div id="page-video-recipes" class="page__body">
+      <section id="video-recipe" class="section error">
+        <div class="container">
+          <include src="layout/template/breadcrumbs.html"></include>
+
+          <div class="error__title">
+            404
+          </div>
+          <!-- /.rules__title -->
+          <div class="video-recipe__description">
+            <strong>Что-то пошло не так</strong>
+            Мы сожалеем, но страница на которую Вы пытались перейти не существует.<br>
+            Пожалуйста, вернитесь <a href="#" onclick="window.history.go(-1); return false;">назад</a>  или перейдите на <a href="/">главную</a>
+          </div>
+          <!-- /.video-recipe__description -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#video-recipe.section -->
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <div class="feedback__top feedback__top--recipe">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none">
+      <path
+        d="M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z"
+        fill="#078D4D" />
+    </svg>
+  </div>
+  <!-- /.feedback__top -->
+
+  <div id="video-recipes-footer">
+    <include src="layout/footer.html"></include>
+  </div>
+  <!-- /#video-recipes-footer -->
+
+</body>
+
+</html>
