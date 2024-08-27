@@ -1,0 +1,24 @@
+.blog {
+  .container {
+    @media screen and (max-width: $mobile) {
+      padding: 0 15px;
+    }
+  }
+
+  .news__text {
+    padding-top: 14px;
+    color: #BBAB9D;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 112%; /* 20.16px */
+    transition: $transition-time ease;
+  }
+
+  .news__item {
+    &:hover {
+      .news__text {
+        color: $color-text__white;
+      }
+    }
+  }
+}
