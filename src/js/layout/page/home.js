@@ -8,6 +8,9 @@ import {
   Autoplay,
   Mousewheel,
   Pagination,
+  Thumbs,
+  Controller,
+  EffectFade,
 } from "swiper/modules";
 
 
@@ -106,6 +109,42 @@ new Swiper("#products-all .swiper", {
   navigation: {
     nextEl: "#products-all .swiper-button-next",
     prevEl: "#products-all .swiper-button-prev",
+  },
+
+});
+
+
+
+const swiperThumbs = new Swiper("#catalog-inter .catalog-inter__previews.swiper", {
+  modules: [Navigation, Thumbs, Controller],
+
+  slidesPerView: 4,
+  spaceBetween: 10,
+  freeMode: true,
+  watchSlidesProgress: true,
+  // loop: true,
+  // speed: 2000,
+
+  navigation: {
+    nextEl: "#catalog-inter .catalog-inter__previews .swiper-button-next",
+    prevEl: "#catalog-inter .catalog-inter__previews .swiper-button-prev",
+  },
+
+});
+
+new Swiper("#catalog-inter .big-image.swiper", {
+  modules: [Thumbs, Controller, EffectFade],
+
+  slidesPerView: 1,
+  spaceBetween: 0,
+  speed: 1500,
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  // loop: true,
+  // speed: 2000,
+
+  thumbs: {
+    swiper: swiperThumbs,
   },
 
 });

@@ -35,7 +35,7 @@
 
   &__images {
     & > a > picture {
-      padding: 0 48px;
+      padding: 0 48px 20px;
 
       @media screen and (max-width: $notebook) {
         max-width: 400px;
@@ -44,16 +44,48 @@
         max-width: unset;
       }
     }
+
+    .big-image {
+      .swiper-slide {
+        width: 100% !important;
+        opacity: 0;
+      }
+
+      .swiper-slide-active  {
+        opacity: 1;
+      }
+    }
   }
 
   &__previews {
-    display: flex;
-    gap: 21px;
-    justify-content: center;
+    // display: flex;
+    // gap: 21px;
+    // justify-content: center;
 
     picture {
-      max-width: 95px;
+      width: 100px;
+      max-width: 100px;
+      height: 100px;
+      border: 1px solid #dcdcdc;
+
+      & > img {
+        width: auto;
+      }
     }
+
+    .swiper-slide {
+      width: 25% !important;
+      // max-width: 100px !important;
+
+      & > picture {
+        cursor: pointer;
+      }
+    }
+
+    // &.swiper-thumbs {
+
+    // }
+
   }
 
   &__title {
