@@ -137,7 +137,7 @@ new Swiper("#catalog-inter .big-image.swiper", {
 
   slidesPerView: 1,
   spaceBetween: 0,
-  speed: 1500,
+  speed: 500,
   effect: 'fade',
   fadeEffect: { crossFade: true },
   // loop: true,
