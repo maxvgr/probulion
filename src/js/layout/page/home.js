@@ -125,10 +125,10 @@ const swiperThumbs = new Swiper("#catalog-inter .catalog-inter__previews.swiper"
   // loop: true,
   // speed: 2000,
 
-  navigation: {
-    nextEl: "#catalog-inter .catalog-inter__previews .swiper-button-next",
-    prevEl: "#catalog-inter .catalog-inter__previews .swiper-button-prev",
-  },
+  // navigation: {
+  //   nextEl: "#catalog-inter .catalog-inter__previews .swiper-button-next",
+  //   prevEl: "#catalog-inter .catalog-inter__previews .swiper-button-prev",
+  // },
 
 });
 
