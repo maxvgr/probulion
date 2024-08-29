@@ -5,6 +5,14 @@
 
   background-repeat: no-repeat;
 
+  @media screen and (min-width: $big-desktop) {
+    // background-position: bottom left;
+
+    object-fit: cover;
+    background-size: 100%;
+
+  }
+
   @media screen and (max-width: $notebook) {
     background-position: bottom right;
   }

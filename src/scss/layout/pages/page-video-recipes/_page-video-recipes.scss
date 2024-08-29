@@ -7,6 +7,10 @@
     &__header {
       background-image: url("../assets/images/layout/pages/for-whom/banner.jpg");
 
+      @media screen and (min-width: $big-desktop) {
+        background-position: top center;
+        background-size: 100%;
+      }
       @media screen and (max-width: $notebook) {
         background-position: top right -400px;
       }

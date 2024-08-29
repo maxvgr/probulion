@@ -6,6 +6,10 @@
   background-position: bottom left, bottom right;
   background-size: 20%, 18%;
   background-repeat: no-repeat, no-repeat;
+
+  @media screen and (min-width: $big-desktop) {
+    background-image: none;
+  }
 }
 
 .video-recipes {

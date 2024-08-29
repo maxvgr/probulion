@@ -49,16 +49,16 @@ new Swiper("#popular .swiper", {
 
   breakpoints: {
     260: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
     },
     360: {
-      slidesPerView: 2.15,
+      slidesPerView: 2,
     },
     740: {
-      slidesPerView: 3.2,
+      slidesPerView: 3,
     },
     1200: {
-      slidesPerView: 4.8,
+      slidesPerView: 4,
     },
   },
 
@@ -88,16 +88,16 @@ new Swiper("#products-all .swiper", {
 
   breakpoints: {
     260: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
     },
     360: {
-      slidesPerView: 2.15,
+      slidesPerView: 2,
     },
     740: {
-      slidesPerView: 3.2,
+      slidesPerView: 3,
     },
     1200: {
-      slidesPerView: 4.8,
+      slidesPerView: 4,
     },
   },
 
@@ -112,8 +112,6 @@ new Swiper("#products-all .swiper", {
   },
 
 });
-
-
 
 const swiperThumbs = new Swiper("#catalog-inter .catalog-inter__previews.swiper", {
   modules: [Navigation, Thumbs, Controller],

@@ -19,8 +19,9 @@
     background-position: top right;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: $laptop) {
-
+    @media screen and (min-width: $big-desktop) {
+      background-position: top center;
+      background-size: 100%;
     }
     @media screen and (max-width: $notebook) {
       background-position: top right -400px;
