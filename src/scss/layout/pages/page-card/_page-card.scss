@@ -45,6 +45,12 @@
     border-radius: 6px;
     background: #e6e6e6;
 
+    a:first-child {
+      display: flex;
+      align-items: center;
+      height: 24px;
+    }
+
     &--minus {
       width: 27px;
       height: 2px;
