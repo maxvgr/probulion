@@ -18,6 +18,10 @@
     grid-template-columns: 1fr 3fr 2fr 1fr;
     gap: 50px;
     align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr 4fr;
+    }
   }
 
   &__product {
@@ -27,7 +31,7 @@
 
     span {
       display: block;
-      color: #CCB7A4;
+      color: #ccb7a4;
       font-weight: 400;
       font-size: 18px;
       line-height: 140%; /* 25.2px */
@@ -45,16 +49,29 @@
     border-radius: 6px;
     background: #e6e6e6;
 
-    a:first-child {
-      display: flex;
-      align-items: center;
-      height: 24px;
+    @media screen and (max-width: $tablet) {
+      gap: 15px;
+      width: auto;
+    }
+
+    a {
+      transition: $transition-time ease;
+
+      &:first-child {
+        display: flex;
+        align-items: center;
+        height: 24px;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     &--minus {
       width: 27px;
       height: 2px;
-      background: #AB9178;
+      background: #ab9178;
     }
 
     &--plus {
@@ -65,5 +82,36 @@
   &__price {
     font-weight: 500;
     font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .video-recipe__ingredients {
+    padding-top: 60px;
+    padding-right: 60px;
+
+    & > ul {
+      gap: 18px;
+    }
+  }
+
+  &__itogo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 112%; /* 22.4px */
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  .button {
+    margin-top: 18px;
+  }
+
+  &__delivery {
+    padding-top: 26px;
+    color: #ab9178;
+    font-size: 18px;
+    line-height: 112%; /* 20.16px */
   }
 }

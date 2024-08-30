@@ -19,4 +19,8 @@
     background: #01614A;
     color: $color-text__white;
   }
+
+  &--noborder {
+    border: 0;
+  }
 }
