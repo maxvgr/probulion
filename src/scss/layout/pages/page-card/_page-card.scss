@@ -35,6 +35,7 @@
 
   .video-recipe__wrapper {
     grid-template-columns: 1fr;
+    gap: 0;
 
     // @media screen and (max-width: $notebook) {
     //   grid-template-columns: 1fr;
@@ -42,16 +43,37 @@
   }
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr 1fr 1fr;
-    gap: 50px;
-    align-items: center;
     border-radius: 25px;
     background: $palette-white;
     box-shadow: 0 0 26px 0 #bbab9d33;
 
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    &--row {
+      display: grid;
+      grid-template-columns: 1fr 3fr 0.6fr 2fr 1fr 0.5fr;
+      gap: 50px;
+      align-items: center;
+      padding: 25px 0 25px 70px;
+
+      @media screen and (max-width: $notebook) {
+        grid-template-columns: 1fr 3fr 1fr;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        padding: 25px 0 25px 30px;
+      }
+      @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 25px 0 25px 10px;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ccb7a4;
+      }
     }
   }
 
@@ -60,8 +82,12 @@
     font-size: 24px;
     line-height: 120%; /* 28.8px */
 
-    @media screen and (max-width: $tablet) {
-      grid-column: 2/4;
+    // @media screen and (max-width: $tablet) {
+    //   grid-column: 2/4;
+    // }
+
+    &--second {
+      font-weight: 500;
     }
 
     span {
@@ -118,9 +144,17 @@
     font-weight: 500;
     font-size: 30px;
     white-space: nowrap;
+
+    @media screen and (max-width: $mobile) {
+      justify-self: center;
+    }
   }
 
   &__delete {
+    @media screen and (max-width: $tablet) {
+      justify-self: center;
+    }
+
     a {
       transition: $transition-time ease;
 
@@ -130,20 +164,39 @@
     }
   }
 
-  .video-recipe__ingredients {
-    margin-top: 0;
-    padding-top: 60px;
-    padding-right: 60px;
+  &__info {
+    display: grid;
+    grid-template-columns: 300px 3fr 1fr;
+    align-items: center;
+    padding: 33px 100px;
+    border-radius: 20px 150px 20px 20px;
+    background: #E3D2C2;
 
-    & > ul {
-      gap: 18px;
+    @media screen and (max-width: $notebook) {
+      padding: 33px;
+    }
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 30px;
     }
   }
 
   &__itogo {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
     font-weight: 700;
     font-size: 20px;
     line-height: 112%; /* 22.4px */
+
+    @media screen and (max-width: $tablet) {
+      min-width: unset;
+      max-width: 200px;
+    }
 
     span {
       font-size: 24px;
@@ -151,8 +204,13 @@
   }
 
   .button {
-    width: 100%;
-    margin-top: 18px;
+    width: 300px;
+    // margin-right: 317px;
+    // margin-top: 18px;
+
+    @media screen and (max-width: $mobile) {
+      width: unset;
+    }
   }
 
   &__delivery {
