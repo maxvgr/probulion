@@ -1,0 +1,21 @@
+.search {
+  &__results {
+    padding: 29px 0;
+    color: $palette-black;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 163%; /* 35.86px */
+  }
+
+  &__items {
+    padding-bottom: 70px;
+    color: $palette-black;
+    font-size: 18px;
+    line-height: 163%; /* 29.34px */
+
+    & > li {
+      padding: 15px 0;
+      border-bottom:  1px solid #ccb7a4;
+    }
+  }
+}
