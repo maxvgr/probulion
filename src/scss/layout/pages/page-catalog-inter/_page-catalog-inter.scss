@@ -1,4 +1,15 @@
 #catalog-inter {
+  .card__quantity {
+    gap: 8px;
+    width: 141px;
+    margin-top: 6px;
+    padding: 10px 17px;
+    font-size: 18px;
+  }
+
+  .card__quantity--plus {
+    margin-top: -2px;
+  }
 }
 
 #page-catalog-inter {
@@ -53,7 +64,7 @@
         opacity: 0;
       }
 
-      .swiper-slide-active  {
+      .swiper-slide-active {
         opacity: 1;
       }
     }
@@ -87,7 +98,6 @@
     // &.swiper-thumbs {
 
     // }
-
   }
 
   &__title {
@@ -156,7 +166,7 @@
 
     & > li {
       padding: 17px 16px;
-      border: 1px solid #D0D0D0;
+      border: 1px solid #d0d0d0;
       border-radius: 2px;
       text-align: center;
 
@@ -165,7 +175,5 @@
         font-size: 24px;
       }
     }
-
-
   }
 }

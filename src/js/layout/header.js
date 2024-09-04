@@ -11,6 +11,7 @@ const popupcard = document.querySelector(".footer-card__popup");
 const popupcardclose = document.querySelector(".footer-card__close");
 const popupcardclosebtn = document.querySelector(".footer-card__close--button");
 const popupcardopen = document.querySelector(".card-popup__open");
+const popupmailopen = document.querySelector(".mail-popup__open");
 
 
 hamburger.addEventListener("click", () => {
@@ -25,8 +26,16 @@ catalog.addEventListener("click", () => {
   // overlay.classList.toggle("is-active");
 });
 
+// popupclose.addEventListener("click", () => {
+//   popup.classList.add("hidden");
+// });
+
+popupmailopen.addEventListener("click", () => {
+  popup.classList.toggle("is-active");
+});
+
 popupclose.addEventListener("click", () => {
-  popup.classList.add("hidden");
+  popup.classList.toggle("is-active");
 });
 
 popupcardopen.addEventListener("click", () => {

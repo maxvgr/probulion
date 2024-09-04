@@ -101,7 +101,7 @@
 
   &__quantity {
     display: flex;
-    gap: 35px;
+    gap: 25px;
     align-items: center;
     justify-content: space-between;
     width: 194px;
@@ -137,6 +137,13 @@
 
     &--plus {
       margin-top: -6px;
+    }
+
+    &--input {
+      border: unset;
+      outline: none;
+      background-color: unset;
+      text-align: center;
     }
   }
 
