@@ -12,7 +12,8 @@ const popupcard = document.querySelector(".footer-card__popup");
 const popupcardclose = document.querySelector(".footer-card__close");
 const popupcardclosebtn = document.querySelector(".footer-card__close--button");
 const popupcardopen = document.querySelector(".card-popup__open");
-
+const searchbtn = document.querySelector(".search__button");
+const search = document.querySelector(".header__search");
 
 
 hamburger.addEventListener("click", () => {
@@ -27,17 +28,18 @@ catalog.addEventListener("click", () => {
   // overlay.classList.toggle("is-active");
 });
 
+if (popupmailopen) {
+  if (popupmailopen.getAttribute('listener') !== 'true') {
+    popupmailopen.addEventListener("click", () => {
+      popup.classList.toggle("is-active");
+    });
+  }
 
-if (popupmailopen.getAttribute('listener') !== 'true') {
-  popupmailopen.addEventListener("click", () => {
-    popup.classList.toggle("is-active");
-  });
-}
-
-if (popupclose.getAttribute('listener') !== 'true') {
-  popupclose.addEventListener("click", () => {
-    popup.classList.toggle("is-active");
-  });
+  if (popupclose.getAttribute('listener') !== 'true') {
+    popupclose.addEventListener("click", () => {
+      popup.classList.toggle("is-active");
+    });
+  }
 }
 
 
@@ -53,8 +55,13 @@ if (document.querySelector('#catalog-inter')) {
   popupcardclosebtn.addEventListener("click", () => {
     popupcard.classList.toggle("is-active");
   });
-
-  Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
 }
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+
+searchbtn.addEventListener("click", () => {
+  search.classList.toggle("is-active");
+});
+
