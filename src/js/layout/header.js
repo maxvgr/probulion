@@ -1,5 +1,6 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import MicroModal from 'micromodal';
 
 const hamburger = document.querySelector(".hamburger--spin");
 const mobileNavs = document.querySelector(".header__menu-mobile");
@@ -28,34 +29,40 @@ catalog.addEventListener("click", () => {
   // overlay.classList.toggle("is-active");
 });
 
-if (popupmailopen) {
-  if (popupmailopen.getAttribute('listener') !== 'true') {
-    popupmailopen.addEventListener("click", () => {
-      popup.classList.toggle("is-active");
-    });
-  }
+// if (popupmailopen) {
+//   if (popupmailopen.getAttribute('listener') !== 'true') {
+//     popupmailopen.addEventListener("click", () => {
+//       popup.classList.toggle("is-active");
+//     });
+//   }
 
-  if (popupclose.getAttribute('listener') !== 'true') {
-    popupclose.addEventListener("click", () => {
-      popup.classList.toggle("is-active");
-    });
-  }
-}
+//   if (popupclose.getAttribute('listener') !== 'true') {
+//     popupclose.addEventListener("click", () => {
+//       popup.classList.toggle("is-active");
+//     });
+//   }
+// }
 
+// if (popupcardopen) {
+//   if (popupcardopen.getAttribute('listener') !== 'true') {
+//     popupcardopen.addEventListener("click", () => {
+//       popupcard.classList.toggle("is-active");
+//     });
+//   }
 
-if (document.querySelector('#catalog-inter')) {
-  popupcardopen.addEventListener("click", () => {
-    popupcard.classList.toggle("is-active");
-  });
+//   if (popupcardclose.getAttribute('listener') !== 'true') {
+//     popupcardclose.addEventListener("click", () => {
+//       popupcard.classList.toggle("is-active");
+//     });
+//   }
 
-  popupcardclose.addEventListener("click", () => {
-    popupcard.classList.toggle("is-active");
-  });
+//   if (popupcardclosebtn.getAttribute('listener') !== 'true') {
+//     popupcardclosebtn.addEventListener("click", () => {
+//       popupcard.classList.toggle("is-active");
+//     });
+//   }
+// }
 
-  popupcardclosebtn.addEventListener("click", () => {
-    popupcard.classList.toggle("is-active");
-  });
-}
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
@@ -65,3 +72,4 @@ searchbtn.addEventListener("click", () => {
   search.classList.toggle("is-active");
 });
 
+MicroModal.init();

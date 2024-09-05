@@ -65,58 +65,75 @@
         <p>Создание сайта <a href="https://artfactor.ru" target="_blank">АртФактор</a></p>
       </div>
       <!-- /.footer__creation -->
-      <div class="footer-mail__popup">
-        <div class="container">
-          <div class="footer-mail__popup--wrapper">
-            <a href="#" class="footer-mail__close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <path
-                  d="M13.3344 38.1416L11.8594 36.6666L23.526 24.9999L11.8594 13.3333L13.3344 11.8583L25.001 23.5249L36.6677 11.8583L38.1427 13.3333L26.476 24.9999L38.1427 36.6666L36.6677 38.1416L25.001 26.4749L13.3344 38.1416Z"
-                  fill="#04B575" />
-              </svg>
-            </a>
-            <!-- /.footer-mail__close -->
-            <div class="footer-mail__title">
-              Ваша заявка принята
-            </div>
-            <!-- /.footer-mail__title -->
-            <div class="footer-mail__text">
-              Мы свяжемся с вами в ближайшее время
-            </div>
-            <!-- /.footer-mail__text -->
-          </div>
-          <!-- /.footer-mail__popup--wrapper -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.footer-mail__popup -->
-      <div class="footer-card__popup">
-        <div class="container">
-          <div class="footer-card__popup--wrapper">
-            <a href="#" class="footer-card__close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <path
-                  d="M13.3344 38.1416L11.8594 36.6666L23.526 24.9999L11.8594 13.3333L13.3344 11.8583L25.001 23.5249L36.6677 11.8583L38.1427 13.3333L26.476 24.9999L38.1427 36.6666L36.6677 38.1416L25.001 26.4749L13.3344 38.1416Z"
-                  fill="#04B575" />
-              </svg>
-            </a>
-            <!-- /.footer-card__close -->
-            <div class="footer-card__title">
-              Товар добавлен в корзину
-            </div>
-            <!-- /.footer-card__title -->
-            <div class="footer-card__buttons">
-              <a href="#" class="button button-secondary footer-card__close--button">Продолжить покупки</a>
-              <a href="#" class="button button-secondary">Перейти в корзину</a>
-            </div>
-            <!-- /.footer-card__buttons -->
-          </div>
-          <!-- /.footer-card__popup--wrapper -->
 
+      <!-- footer-mail__popup -->
+      <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+            <header class="modal__header">
+              <!-- <button class="modal__close" aria-label="Close modal" data-micromodal-close></button> -->
+            </header>
+            <main class="modal__content" id="modal-2-content">
+              <div class="footer-mail__popup--wrapper">
+                <a href="#" class="footer-mail__close" aria-label="Close modal" data-micromodal-close>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <path
+                      d="M13.3344 38.1416L11.8594 36.6666L23.526 24.9999L11.8594 13.3333L13.3344 11.8583L25.001 23.5249L36.6677 11.8583L38.1427 13.3333L26.476 24.9999L38.1427 36.6666L36.6677 38.1416L25.001 26.4749L13.3344 38.1416Z"
+                      fill="#04B575" />
+                  </svg>
+                </a>
+                <!-- /.footer-mail__close -->
+                <div class="footer-mail__title">
+                  Ваша заявка принята
+                </div>
+                <!-- /.footer-mail__title -->
+                <div class="footer-mail__text">
+                  Мы свяжемся с вами в ближайшее время
+                </div>
+                <!-- /.footer-mail__text -->
+              </div>
+              <!-- /.footer-mail__popup--wrapper -->
+            </main>
+          </div>
         </div>
-        <!-- /.container -->
       </div>
-      <!-- /.footer-card__popup -->
+      <!-- /footer-mail__popup -->
+
+      <!-- footer-card__popup -->
+      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <!-- <button class="modal__close" aria-label="Close modal" data-micromodal-close></button> -->
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <div class="footer-card__popup--wrapper">
+                <a href="#" class="footer-card__close" aria-label="Close modal" data-micromodal-close>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <path
+                      d="M13.3344 38.1416L11.8594 36.6666L23.526 24.9999L11.8594 13.3333L13.3344 11.8583L25.001 23.5249L36.6677 11.8583L38.1427 13.3333L26.476 24.9999L38.1427 36.6666L36.6677 38.1416L25.001 26.4749L13.3344 38.1416Z"
+                      fill="#04B575" />
+                  </svg>
+                </a>
+                <!-- /.footer-card__close -->
+                <div class="footer-card__title">
+                  Товар добавлен в корзину
+                </div>
+                <!-- /.footer-card__title -->
+                <div class="footer-card__buttons">
+                  <a href="#" class="button button-secondary footer-card__close--button" data-micromodal-close>Продолжить покупки</a>
+                  <a href="#" class="button button-secondary">Перейти в корзину</a>
+                </div>
+                <!-- /.footer-card__buttons -->
+              </div>
+              <!-- /.footer-card__popup--wrapper -->
+            </main>
+          </div>
+        </div>
+      </div>
+      <!-- /footer-card__popup -->
+
+
     </div>
     <!-- /.footer__wrapper -->
   </div>
