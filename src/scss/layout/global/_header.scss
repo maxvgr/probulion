@@ -191,6 +191,7 @@
 
     .search__form {
       position: absolute;
+      z-index: -10;
       top: 0;
       right: 20px;
       align-items: center;
@@ -226,6 +227,7 @@
       }
 
       .search__form {
+        z-index: 1;
         display: flex;
         opacity: 0.9;
 
