@@ -71,7 +71,34 @@
     @media screen and (max-width: $mobile) {
       padding: 0 15px;
     }
+  }
 
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 
+    padding: 27px 39px 32px;
+    border-radius: 25px;
+    background: $palette-white;
+
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 116%; /* 23.2px */
+  }
+
+  &__text {
+    overflow: hidden;
+    max-height: 140px;
+    font-size: 18px;
+    line-height: 125%; /* 22.5px */
+  }
+
+  &__date {
+    color: #D0D0D0;
+    font-size: 18px;
+    line-height: 116%; /* 20.88px */
   }
 }

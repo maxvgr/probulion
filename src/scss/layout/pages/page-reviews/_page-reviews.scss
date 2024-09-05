@@ -1,0 +1,64 @@
+.page-reviews {
+  .reviews {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 29px;
+      margin-top: 22px;
+
+      @media screen and (max-width: $notebook) {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+
+        overflow-y: hidden;
+      }
+      @media screen and (max-width: $tablet) {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+
+        overflow-y: hidden;
+      }
+      @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+      }
+    }
+
+    &__item {
+      border: 1px solid #d0d0d0;
+      border-radius: 25px;
+      background: $palette-white;
+    }
+
+    &-form__title {
+      padding-top: 55px;
+      padding-bottom: 14px;
+      color: $color-text__black;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 163%; /* 29.34px */
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 790px;
+    }
+
+    &__input {
+      padding: 15px 189px 15px 24px;
+      border: 1px solid #d0d0d0;
+      border-radius: 5px;
+      outline: none;
+      background: $palette-white;
+      color: #8c8c8c;
+      font-size: 18px;
+    }
+  }
+
+  .button {
+    width: min-content;
+  }
+}
