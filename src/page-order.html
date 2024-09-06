@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+  <span class="header-bottom__line"></span>
+  <!-- /.header-bottom__line -->
+
+  <main>
+    <div id="page-video-recipes" class="page__body">
+      <section id="video-recipe" class="section card order">
+        <div class="container">
+          <include src="layout/template/breadcrumbs.html"></include>
+
+          <div class="card__title">
+            Оформление заказа
+          </div>
+          <!-- /.rules__title -->
+
+          <div class="order__wrapper">
+            <div class="order__fields">
+              <div class="order__field">
+                <label>Укажите город</label>
+                <input type="text" class="order__input" value="Город">
+              </div>
+              <!-- /.order__field -->
+              <div class="order__field">
+                <label>Доставка</label>
+                <div class="delivery__wrapper">
+                  <div class="delivery__items">
+                    <div class="delivery__item">
+                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
+                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
+                      <span>Курьерская доставка</span>
+                    </div>
+                    <!-- /.delivery__item -->
+                    <div class="delivery__item">
+                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
+                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/yandex.png">
+                      <span>Курьерская доставка</span>
+                    </div>
+                    <!-- /.delivery__item -->
+                    <div class="delivery__item">
+                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
+                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
+                      <span>Самовывоз</span>
+                    </div>
+                    <!-- /.delivery__item -->
+                    <div class="delivery__item">
+                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
+                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/yandex.png">
+                      <span></span>
+                    </div>
+                    <!-- /.delivery__item -->
+                    <div class="delivery__item">
+                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
+                      <!-- <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png"> -->
+                      <span>Самовывоз</span>
+                    </div>
+
+                  </div>
+                  <!-- /.delivery_order -->
+                  <div class="delivery__order">
+                    <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
+                    <span>Курьерская доставка</span>
+
+                    Доставка собственным курьером
+                    <a href="#" class="button button-white">Выбрать ПВЗ</a>
+                    ул. Трактористов, 19<br>
+                    Стоимость:<br>
+                    735<br>
+                    <br>
+                    Срок доставки:<br>
+                    1 день<br>
+
+
+                  </div>
+                  <!-- /.delivery__order -->
+                </div>
+                <!-- /.delivery__wrapper -->
+
+              </div>
+              <!-- /.order__field -->
+              <div class="order__field">
+                <label>Оплата</label>
+                <div class="order__payment">
+                  <input type="text" class="order__input" value="Картой">
+                  <input type="text" class="order__input" value="Наличными">
+                </div>
+                <!-- /.order__payment -->
+              </div>
+              <!-- /.order__field -->
+              <div class="order__field">
+                <label>Контактные данные</label>
+                <input type="text" class="order__input" value="ФИО *">
+                <input type="text" class="order__input" value="Телефон *">
+                <input type="text" class="order__input" value="E-mail *">
+                <input type="text" class="order__input" value="Дата доставки">
+                <input type="text" class="order__input" value="Адрес доставки">
+                <textarea type="text" class="order__input" value="">Комментарий к заказу</textarea>
+              </div>
+              <!-- /.order__field -->
+
+            </div>
+            <!-- /.order__fields -->
+            <div class="order__products">
+              <ul>
+                <li>2 товара на сумму <span>1050 ₽</span></li>
+                <li>Доставка <span>399 ₽</span></li>
+                <li><strong>Итого</strong> <span><strong>1050 ₽</strong>  </span></li>
+              </ul>
+              <a href="#" class="button button-primary button-primary--dark  button-primary--noborder">Оплатить</a>
+              <span class="order__products--text">Нажимая на кнопку “Заказать” вы соглашаетесь с правилами оплаты, условиями доставки и политикой в отношении обработки персональных данных.</span>
+            </div>
+            <!-- /.order__products -->
+          </div>
+          <!-- /.order__wrapper -->
+
+
+          <div class="order__field">
+            <label>Товары в заказе</label>
+          </div>
+          <!-- /.order__field -->
+
+          <div class="video-recipe__wrapper">
+            <div class="video-recipe__description">
+              <div class="card__wrapper">
+                <div class="card__wrapper--row">
+                  <picture class="lazy">
+                    <img alt="" class="image image--cover lazy__item"
+                      data-src="assets/images/layout/pages/card/image.jpg">
+                  </picture>
+                  <div class="card__product">
+                    Костный куриный бульон в две строчки
+                    <span>400г</span>
+                  </div>
+                  <!-- /.card__product -->
+                  <div class="card__product card__product--second">
+                    400 ₽
+                    <span>за шт.</span>
+                  </div>
+                  <!-- /.card__product--second -->
+                  <div class="card__quantity">
+
+                      <div>
+                      </div>
+                      <!-- /.card__quantity--minus -->
+
+                    <input type="text" class="card__quantity--input" size="1" value="2"></input>
+
+                      <div>
+                      </div>
+                      <!-- /.card__quantity--plus -->
+
+                  </div>
+                  <!-- /.card__quantity -->
+                  <div class="card__price">
+                    800 ₽
+                  </div>
+                  <!-- /.card__price -->
+                </div>
+                <!-- /.card__wrapper--row -->
+                <div class="card__wrapper--row">
+                  <picture class="lazy">
+                    <img alt="" class="image image--cover lazy__item"
+                      data-src="assets/images/layout/pages/card/image.jpg">
+                  </picture>
+                  <div class="card__product">
+                    Костный куриный бульон в две строчки
+                    <span>400г</span>
+                  </div>
+                  <!-- /.card__product -->
+                  <div class="card__product card__product--second">
+                    400 ₽
+                    <span>за шт.</span>
+                  </div>
+                  <!-- /.card__product--second -->
+                  <div class="card__quantity">
+
+                      <div></div>
+
+
+                    <input type="text" class="card__quantity--input" size="1" value="1"></input>
+
+                      <div></div>
+
+
+                  </div>
+                  <!-- /.card__quantity -->
+                  <div class="card__price">
+                    400 ₽
+                  </div>
+                  <!-- /.card__price -->
+
+                </div>
+                <!-- /.card__wrapper--row -->
+
+              </div>
+              <!-- /.card__wrapper -->
+
+            </div>
+            <!-- /.video-recipe__description -->
+            <!-- <div class="card__info">
+                <div class="card__itogo">Итого <span>1200 ₽</span></div>
+                <div></div>
+
+                <a href="#" class="button button-primary button-primary--dark  button-primary--noborder">Перейти к оформлению</a>
+
+            </div> -->
+            <!-- /.card__info -->
+          </div>
+          <!-- /.video-recipe__wrapper -->
+        </div>
+        <!-- /.container -->
+
+      </section>
+      <!-- /#video-recipe.section -->
+
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <div class="feedback__top feedback__top--recipe">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none" preserveAspectRatio="none">
+      <path
+        d="M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z"
+        fill="#078D4D" />
+    </svg>
+  </div>
+  <!-- /.feedback__top -->
+
+  <div id="video-recipes-footer">
+    <include src="layout/footer.html"></include>
+  </div>
+  <!-- /#video-recipes-footer -->
+
+</body>
+
+</html>
