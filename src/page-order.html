@@ -85,9 +85,35 @@
               <!-- /.order__field -->
               <div class="order__field">
                 <label>Оплата</label>
+
                 <div class="order__payment">
-                  <input type="text" class="order__input" value="Картой">
-                  <input type="text" class="order__input" value="Наличными">
+                  <div class="order__payment--btn">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked class="order__input">
+                    <label for="radio-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15.9375 3.75H4.0625C2.85438 3.75 1.875 4.72938 1.875 5.9375V14.0625C1.875 15.2706 2.85438 16.25 4.0625 16.25H15.9375C17.1456 16.25 18.125 15.2706 18.125 14.0625V5.9375C18.125 4.72938 17.1456 3.75 15.9375 3.75Z" stroke="#8C8C8C" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.875 7.5H18.125M5 11.7188H6.875V12.5H5V11.7188Z" stroke="#8C8C8C" stroke-linejoin="round"/>
+                      </svg>
+                      Картой
+                    </label>
+                  </div>
+                  <div class="order__payment--btn">
+                    <input id="radio-2" type="radio" name="radio" value="2" class="order__input">
+                    <label for="radio-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M18.5625 2.75H0.6875V16.5H18.5625V2.75ZM17.1875 15.125H2.0625V4.125H17.1875V15.125Z" fill="#8C8C8C"/>
+                        <path d="M19.9375 6.1875V17.875H4.125V19.25H21.3125V6.1875H19.9375Z" fill="#8C8C8C"/>
+                        <path d="M9.625 12.9963C11.3309 12.9963 12.7188 11.4865 12.7188 9.63076C12.7188 7.77498 11.3309 6.26519 9.625 6.26519C7.91914 6.26519 6.53125 7.77494 6.53125 9.63076C6.53125 11.4866 7.91914 12.9963 9.625 12.9963ZM9.625 7.64019C10.5727 7.64019 11.3438 8.53316 11.3438 9.63076C11.3438 10.7284 10.5727 11.6213 9.625 11.6213C8.67728 11.6213 7.90625 10.7284 7.90625 9.63076C7.90625 8.53316 8.67728 7.64019 9.625 7.64019ZM3.4375 5.84375H4.8125V13.4062H3.4375V5.84375ZM14.4375 5.84375H15.8125V13.4062H14.4375V5.84375Z" fill="#8C8C8C"/>
+                      </svg>
+                      Наличными
+                    </label>
+                  </div>
+
+
+
+
+                  <!-- <input type="text" class="order__input" value="Картой">
+                  <input type="text" class="order__input" value="Наличными"> -->
                 </div>
                 <!-- /.order__payment -->
               </div>
