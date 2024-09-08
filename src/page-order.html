@@ -31,39 +31,50 @@
                 <div class="delivery__wrapper">
                   <div class="delivery__items">
                     <div class="delivery__item">
-                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
-                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
-                      <span>Курьерская доставка</span>
+                      <input id="radio-3" type="radio" name="radio2" value="1" checked class="order__input">
+                      <label for="radio-3">
+                        <img alt="" class="image--cover" src="assets/images/layout/pages/order/sdek.png">
+                        <span>Курьерская доставка</span>
+                      </label>
                     </div>
                     <!-- /.delivery__item -->
                     <div class="delivery__item">
-                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
-                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/yandex.png">
-                      <span>Курьерская доставка</span>
+                      <input id="radio-4" type="radio" name="radio2" value="1" class="order__input">
+                      <label for="radio-4">
+                        <img alt="" class="image--cover" src="assets/images/layout/pages/order/yandex.png">
+                        <span>Курьерская доставка</span>
+                      </label>
+
                     </div>
                     <!-- /.delivery__item -->
                     <div class="delivery__item">
-                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
-                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
-                      <span>Самовывоз</span>
+                      <input id="radio-5" type="radio" name="radio2" value="1" class="order__input">
+                      <label for="radio-5">
+                        <img alt="" class="image--cover" src="assets/images/layout/pages/order/sdek.png">
+                        <span>Самовывоз</span>
+                      </label>
                     </div>
                     <!-- /.delivery__item -->
                     <div class="delivery__item">
-                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
-                      <img alt="" class="image--cover"  src="assets/images/layout/pages/order/yandex.png">
-                      <span></span>
+                      <input id="radio-6" type="radio" name="radio2" value="1" class="order__input">
+                      <label for="radio-6">
+                        <img alt="" class="image--cover" src="assets/images/layout/pages/order/yandex.png">
+                        <span></span>
+                      </label>
                     </div>
                     <!-- /.delivery__item -->
                     <div class="delivery__item">
-                      <!-- <input name="DELIVERY_ID" type="checkbox" class="order__checkbox" value=""> -->
-                      <!-- <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png"> -->
-                      <span>Самовывоз</span>
+                      <input id="radio-7" type="radio" name="radio2" value="1" class="order__input">
+                      <label for="radio-7">
+                        <!-- <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png"> -->
+                        <span>Самовывоз</span>
+                      </label>
                     </div>
 
                   </div>
                   <!-- /.delivery_order -->
                   <div class="delivery__order">
-                    <img alt="" class="image--cover"  src="assets/images/layout/pages/order/sdek.png">
+                    <img alt="" class="image--cover" src="assets/images/layout/pages/order/sdek.png">
                     <span>Курьерская доставка</span>
 
                     Доставка собственным курьером
@@ -91,8 +102,11 @@
                     <input id="radio-1" type="radio" name="radio" value="1" checked class="order__input">
                     <label for="radio-1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M15.9375 3.75H4.0625C2.85438 3.75 1.875 4.72938 1.875 5.9375V14.0625C1.875 15.2706 2.85438 16.25 4.0625 16.25H15.9375C17.1456 16.25 18.125 15.2706 18.125 14.0625V5.9375C18.125 4.72938 17.1456 3.75 15.9375 3.75Z" stroke="#8C8C8C" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1.875 7.5H18.125M5 11.7188H6.875V12.5H5V11.7188Z" stroke="#8C8C8C" stroke-linejoin="round"/>
+                        <path
+                          d="M15.9375 3.75H4.0625C2.85438 3.75 1.875 4.72938 1.875 5.9375V14.0625C1.875 15.2706 2.85438 16.25 4.0625 16.25H15.9375C17.1456 16.25 18.125 15.2706 18.125 14.0625V5.9375C18.125 4.72938 17.1456 3.75 15.9375 3.75Z"
+                          stroke="#8C8C8C" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.875 7.5H18.125M5 11.7188H6.875V12.5H5V11.7188Z" stroke="#8C8C8C"
+                          stroke-linejoin="round" />
                       </svg>
                       Картой
                     </label>
@@ -101,9 +115,12 @@
                     <input id="radio-2" type="radio" name="radio" value="2" class="order__input">
                     <label for="radio-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <path d="M18.5625 2.75H0.6875V16.5H18.5625V2.75ZM17.1875 15.125H2.0625V4.125H17.1875V15.125Z" fill="#8C8C8C"/>
-                        <path d="M19.9375 6.1875V17.875H4.125V19.25H21.3125V6.1875H19.9375Z" fill="#8C8C8C"/>
-                        <path d="M9.625 12.9963C11.3309 12.9963 12.7188 11.4865 12.7188 9.63076C12.7188 7.77498 11.3309 6.26519 9.625 6.26519C7.91914 6.26519 6.53125 7.77494 6.53125 9.63076C6.53125 11.4866 7.91914 12.9963 9.625 12.9963ZM9.625 7.64019C10.5727 7.64019 11.3438 8.53316 11.3438 9.63076C11.3438 10.7284 10.5727 11.6213 9.625 11.6213C8.67728 11.6213 7.90625 10.7284 7.90625 9.63076C7.90625 8.53316 8.67728 7.64019 9.625 7.64019ZM3.4375 5.84375H4.8125V13.4062H3.4375V5.84375ZM14.4375 5.84375H15.8125V13.4062H14.4375V5.84375Z" fill="#8C8C8C"/>
+                        <path d="M18.5625 2.75H0.6875V16.5H18.5625V2.75ZM17.1875 15.125H2.0625V4.125H17.1875V15.125Z"
+                          fill="#8C8C8C" />
+                        <path d="M19.9375 6.1875V17.875H4.125V19.25H21.3125V6.1875H19.9375Z" fill="#8C8C8C" />
+                        <path
+                          d="M9.625 12.9963C11.3309 12.9963 12.7188 11.4865 12.7188 9.63076C12.7188 7.77498 11.3309 6.26519 9.625 6.26519C7.91914 6.26519 6.53125 7.77494 6.53125 9.63076C6.53125 11.4866 7.91914 12.9963 9.625 12.9963ZM9.625 7.64019C10.5727 7.64019 11.3438 8.53316 11.3438 9.63076C11.3438 10.7284 10.5727 11.6213 9.625 11.6213C8.67728 11.6213 7.90625 10.7284 7.90625 9.63076C7.90625 8.53316 8.67728 7.64019 9.625 7.64019ZM3.4375 5.84375H4.8125V13.4062H3.4375V5.84375ZM14.4375 5.84375H15.8125V13.4062H14.4375V5.84375Z"
+                          fill="#8C8C8C" />
                       </svg>
                       Наличными
                     </label>
@@ -135,10 +152,11 @@
               <ul>
                 <li>2 товара на сумму <span>1050 ₽</span></li>
                 <li>Доставка <span>399 ₽</span></li>
-                <li><strong>Итого</strong> <span><strong>1050 ₽</strong>  </span></li>
+                <li><strong>Итого</strong> <span><strong>1050 ₽</strong> </span></li>
               </ul>
               <a href="#" class="button button-primary button-primary--dark  button-primary--noborder">Оплатить</a>
-              <span class="order__products--text">Нажимая на кнопку “Заказать” вы соглашаетесь с правилами оплаты, условиями доставки и политикой в отношении обработки персональных данных.</span>
+              <span class="order__products--text">Нажимая на кнопку “Заказать” вы соглашаетесь с правилами оплаты,
+                условиями доставки и политикой в отношении обработки персональных данных.</span>
             </div>
             <!-- /.order__products -->
           </div>
@@ -170,15 +188,15 @@
                   <!-- /.card__product--second -->
                   <div class="card__quantity">
 
-                      <div>
-                      </div>
-                      <!-- /.card__quantity--minus -->
+                    <div>
+                    </div>
+                    <!-- /.card__quantity--minus -->
 
                     <input type="text" class="card__quantity--input" size="1" value="2"></input>
 
-                      <div>
-                      </div>
-                      <!-- /.card__quantity--plus -->
+                    <div>
+                    </div>
+                    <!-- /.card__quantity--plus -->
 
                   </div>
                   <!-- /.card__quantity -->
@@ -205,12 +223,12 @@
                   <!-- /.card__product--second -->
                   <div class="card__quantity">
 
-                      <div></div>
+                    <div></div>
 
 
                     <input type="text" class="card__quantity--input" size="1" value="1"></input>
 
-                      <div></div>
+                    <div></div>
 
 
                   </div>
@@ -249,7 +267,8 @@
   </main>
 
   <div class="feedback__top feedback__top--recipe">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none" preserveAspectRatio="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="282" viewBox="0 0 1920 282" fill="none"
+      preserveAspectRatio="none">
       <path
         d="M-2 322.459H41.5H1924V6.45867C1561.5 -44.0413 1150.5 218.959 954 193.959C762 174.959 483.5 119.959 256 138.459C84.4 156.859 12.5 199.792 -2 218.959V322.459Z"
         fill="#078D4D" />
