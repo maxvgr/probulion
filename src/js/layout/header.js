@@ -6,15 +6,26 @@ const hamburger = document.querySelector(".hamburger--spin");
 const mobileNavs = document.querySelector(".header__menu-mobile");
 const catalog = document.querySelector(".mobile-catalog");
 const hiddenmenu = document.querySelector(".mobile-catalog__hidden-menu");
-const popup = document.querySelector(".footer-mail__popup");
-const popupmailopen = document.querySelector(".mail-popup__open");
-const popupclose = document.querySelector(".footer-mail__close");
-const popupcard = document.querySelector(".footer-card__popup");
-const popupcardclose = document.querySelector(".footer-card__close");
-const popupcardclosebtn = document.querySelector(".footer-card__close--button");
-const popupcardopen = document.querySelector(".card-popup__open");
+// const popup = document.querySelector(".footer-mail__popup");
+// const popupmailopen = document.querySelector(".mail-popup__open");
+// const popupclose = document.querySelector(".footer-mail__close");
+// const popupcard = document.querySelector(".footer-card__popup");
+// const popupcardclose = document.querySelector(".footer-card__close");
+// const popupcardclosebtn = document.querySelector(".footer-card__close--button");
+// const popupcardopen = document.querySelector(".card-popup__open");
 const searchbtn = document.querySelector(".search__button");
 const search = document.querySelector(".header__search");
+const header = document.querySelector('#header');
+
+if (document.querySelector('#header')) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      header.classList.add('header--fixed');
+    } else {
+      header.classList.remove('header--fixed');
+    }
+  });
+};
 
 
 hamburger.addEventListener("click", () => {
