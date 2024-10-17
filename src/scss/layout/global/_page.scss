@@ -37,4 +37,8 @@
   &__body {
     overflow: clip;
   }
+
+  .fancybox__container {
+    --fancybox-bg: rgba(24, 24, 27, 0.58) !important;
+  }
 }
