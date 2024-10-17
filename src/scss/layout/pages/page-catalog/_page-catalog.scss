@@ -26,6 +26,36 @@
     }
   }
 
+  &__buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+
+    .button-popular {
+      font-weight: 500;
+      font-size: 20px;
+      transition: $transition-time ease;
+
+      @media screen and (max-width: $big-laptop) {
+        width: auto;
+       }
+       @media screen and (max-width: $tablet) {
+        padding: 17px 40px;
+        font-size: 16px;
+      }
+
+      &:hover, &--active {
+        border: 1px solid #01614a;
+        background-color: #01614a;
+        color: $color-text__white;
+      }
+
+
+
+
+    }
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -66,7 +96,18 @@
     picture {
       justify-self: center;
       max-width: 250px;
+      min-height: 220px;
       padding-top: 15px;
+
+      @media screen and (max-width: $laptop) {
+        min-height: 200px;
+      }
+      @media screen and (max-width: $tablet) {
+        min-height: 160px;
+      }
+      @media screen and (max-width: $mobile) {
+        min-height: 110px;
+      }
     }
 
     &--labels {
@@ -172,6 +213,9 @@
        @media screen and (max-width: $tablet) {
         padding: 17px 40px;
         font-size: 16px;
+      }
+      @media screen and (max-width: $mobile) {
+        padding: 17px 20px;
       }
 
       &:hover {

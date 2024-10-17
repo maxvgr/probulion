@@ -48,6 +48,10 @@
 
     .nav__link {
       font-size: 18px;
+
+      &:hover {
+        color: #008555;
+      }
     }
   }
 

@@ -177,7 +177,7 @@
     align-items: center;
     padding: 33px 100px;
     border-radius: 20px 150px 20px 20px;
-    background: #E3D2C2;
+    background: #e3d2c2;
 
     @media screen and (max-width: $notebook) {
       padding: 33px;
@@ -225,5 +225,10 @@
     color: #ab9178;
     font-size: 18px;
     line-height: 112%; /* 20.16px */
+  }
+
+  .basket-items-list-item-clear-btn::after,
+  .basket-items-list-item-clear-btn::before {
+    background: #04B575;
   }
 }
